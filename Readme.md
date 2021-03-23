@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Andrey Izosimov](https://up.htmlacademy.ru/adaptive/22/user/605037).
-* Наставник: `Неизвестно`.
+* Наставник: `Ivan Zharkov`.
 
 ---
 
