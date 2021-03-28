@@ -5,7 +5,7 @@
 @media screen and (min-width: 320px) {
   .fiter-image__img{
     object-fit: contain;
-    width: 100%;
+    width: 70%;
     height: 20%;
   }
 
@@ -13,15 +13,16 @@
 @media screen and (min-width: 680px) {
   .fiter-image__img{
     object-fit: contain;
-    width: 60%;
+    width: 40%;
     min-height: 50%;
   }
 
 }
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 980px) and (max-width: 1920px) {
   .fiter-image__img{
     object-fit: contain;
-    width: 60%;
+    min-width: 15%;
+    max-width: 20%;
     min-height: 100%;
   }
 
