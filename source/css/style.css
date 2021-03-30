@@ -28,34 +28,4 @@
 
 }
 
-.range-filter {
-  width: 200px;
-  margin-top: 49px;
-  margin-bottom: 59px;
-}
-.range-controls {
-  position: relative;
-  height: 41px;
-  margin-bottom: 15px;
-  padding: 39px 20px 0px 20px;
-  background-color: transparent;
-  border-radius: 5px;
-}
-.range-controls .bar {
-  width: 70%;
-  height: 14px;
-  background-color: #DCDCDC;
-}
-.toggle {
-  position: absolute;
-  top: 29px;
-  left: 0;
-  border: 11px solid #CDCDCD;
-  width: 12px;
-  height: 12px;
-  padding: 0;
-  background-color: #68B738;
-  border-radius: 50%;
-  box-shadow: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16));
-  cursor: pointer;
-}
+
