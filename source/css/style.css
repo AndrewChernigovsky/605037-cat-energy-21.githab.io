@@ -33,7 +33,6 @@
   margin-top: 49px;
   margin-bottom: 59px;
 }
-
 .range-controls {
   position: relative;
   height: 41px;
@@ -42,13 +41,11 @@
   background-color: transparent;
   border-radius: 5px;
 }
-
 .range-controls .bar {
   width: 70%;
   height: 14px;
   background-color: #DCDCDC;
 }
-
 .toggle {
   position: absolute;
   top: 29px;
