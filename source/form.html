@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo"><img class="page-header__logo-image" src="img/logo/logotype.png" width="191"
+        height="38" alt="logotype"></a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="main-nav__toggle-burger"></span>
+        <span class="main-nav__toggle-burger"></span>
+        <span class="main-nav__toggle-burger"></span>
+      </button>
+      <div class="main-nav__wrapper">
+
+
+        <ul class="menu-nav__list menu-nav-list">
+          <li class="menu-nav__item menu-nav__item--active">
+            <a href="index.html">главная</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="shop.html">католог продукции</a>
+          </li>
+          <li class="menu-nav__item">
+            <a>подбор программы</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+  </header>
+  <main class="page-main">
+    <h2 class="visually-hidden">Подбор программы питания</h2>
+    <section class="form-pets">
+      <h1 class="form-pets__main-heading">Подбор программы</h1>
+      <h2 class="form-pets__heading">Заполните анкету, и мы подберем
+        программу питания для вашего кота</h2>
+      <form class="form-pets__filter" method="GET" action="https://echo.htmlacademy.ru">
+        <fieldset class="form-pets form-pets__filter-item">
+          <legend class="visually-hidden">Данные питомца</legend>
+          <label class="name">
+            Имя:* <input type="text" name="name" aria-label="Введите имя питомца">
+          </label><br>
+          <label class="weight">
+            Вес (кг):* <input type="text" name="weight" aria-label="Введите вес питомца">
+          </label><br>
+          <label class="age">
+            Возраст (лет):* <input type="text" name="age" aria-label="Введите возраст питомца">
+          </label><br>
+
+        </fieldset>
+
+        <fieldset class="form-pets form-pets__filter-item">
+          <legend class="visually-hidden">Диета питомца</legend>
+
+          <ul class="form-pets__filter-list">
+            <li class="form-pets-filer__item filter-option filter-radio">
+              <input class="visually-hidden filter-input-radio filter-input" type="radio" name="programma" value="slim"
+                id="filter-slim">
+              <label for="filter-slim">Похудение</label>
+            </li>
+            <li class="form-pets-filer__item filter-option filter-radio">
+              <input class="visually-hidden filter-input-radio filter-input" type="radio" name="programma" value="slim"
+                id="filter-fat">
+              <label for="filter-fat">Набор Массы</label>
+            </li>
+            <li class="form-pets-filer__item filter-option filter-radio">
+              <input class="visually-hidden filter-input-radio filter-input" type="radio" name="programma" value="slim"
+                id="filter-advice">
+              <label for="filter-advice">Не знаю (нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-pets form-pets__filter-item">
+          <legend>Контактные данные
+            (владельца кота)</legend>
+
+          <label class="email">
+            Email:* <input class="email-user" id="email-user" type="email" name="email" aria-label="Введите емаил"
+              placeholder="example@gamil.com">
+          </label><br>
+          <label class="telephone-number">
+            Телефон:* <input class="telephone-user" id="telephone-user" type="tel" name="telephone-number"
+              aria-label="Введите вес питомца" placeholder="8 (960) 900-60-90">
+          </label>
+
+
+        </fieldset>
+        <fieldset class="form-pets form-pets__filter-item">
+          <legend>Комментарий</legend>
+          <textarea class="textarea" name="comment" id="comment-field" placeholder="Расскажите обо всех повадках кота"
+            rows="6" cols="80" wrap="hard"></textarea>
+        </fieldset>
+
+        </fieldset>
+        <fieldset class="form-pets form-pets__filter-item">
+          <legend>Дополнительно</legend>
+          <ul class="form-pets form-pets__filter-pets-list">
+            <li class="filter-pets-item filter-option filter-checkbox">
+              <input class="visually-hidden  filter-input-checkbox filter-input" type="checkbox" name="sugar"
+                id="filter-sugar" checked>
+              <label for="filter-sugar">сахарозаменитель</label>
+            </li>
+            <li class="filter-pets-item filter-option filter-checkbox">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="water"
+                id="filter-water">
+              <label for="filter-water">питьевая вода</label>
+            </li>
+            <li class="filter-pets-item   filter-option filter-checkbox">
+              <input class="visually-hidden  filter-input-checkbox filter-input" type="checkbox" name="milk"
+                id="filter-milk" checked>
+              <label for="filter-milk">молоко</label>
+            </li>
+            <li class="filter-pets-item filter-option filter-checkbox">
+              <input class="visually-hidden  filter-input-checkbox filter-input" type="checkbox" name="vitamins"
+                id="filter-vitamins">
+              <label for="filter-vitamins">витамины</label>
+            </li>
+          </ul>
+          <button class="button-push" type="submit">отправить заявку</button>
+        </fieldset>
+      </form>
+      <p class="mark">* — Обязательные поля</p>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <section class="cooperation">
+        <h2>приглашаем к сотрудничеству дилеров!</h2>
+        <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div id="map"></div>
+      </section>
+      <div class="page-footer__social">
+        <a class="page-footer__logo"><img class="page-footer__logo-image" src="img/logo/logotype-text.png" width="101"
+            height="18" alt="logotype"></a>
+        <div class="social">
+          <a class="soical__icon-link" href=""><img src="img/icons/icon_vkontakte.svg" width="22" height="12"
+              alt="Вконтакте"></a>
+          <a class="soical__icon-link" href=""><img src="img/icons/icon_instagram.svg" width="16" height="16"
+              alt="Инстаграм"></a>
+          <a class="soical__icon-link" href=""><img src="img/icons/icon_facebook.svg" width="22" height="22"
+              alt="Фейсбук"></a>
+        </div>
+        <div class="developed">
+          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+            <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
+                fill="#666666" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/map.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3fw1w75fJqaNw1vjbIQwwCeKjIvuSPf0&callback=initMap&libraries=&v=weekly"
+    async></script>
+</body>
+
+</html>
