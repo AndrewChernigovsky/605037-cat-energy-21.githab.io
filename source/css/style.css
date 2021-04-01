@@ -62,3 +62,16 @@
   box-shadow: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16));
   cursor: pointer;
 }
+
+.form__fieldset {
+  max-width: 100%;
+  margin: 0px 10px;
+}
+
+.comment{
+  max-width: 100%;
+}
+
+.form__textarea {
+  min-width: 100%;
+}
