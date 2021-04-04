@@ -1,19 +1,41 @@
 {
-  "name": "605037-cat-energy-22",
-  "description": "* Студент: [Andrey Izosimov](https://up.htmlacademy.ru/adaptive/22/user/605037). * Наставник: `Ivan 🤪 Zharkov`.",
-  "version": "1.0.0",
-  "main": "gulpfile.js",
+  "name": "cat-energy-22",
+  "private": true,
+  "description": "Личный проект «Кэт энерджи» от HTML Academy",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.0.0",
+    "autoprefixer": "10.2.5",
+    "browser-sync": "2.26.14",
+    "gulp": "4.0.2",
+    "gulp-plumber": "1.2.1",
+    "gulp-postcss": "9.0.0",
+    "gulp-sass": "4.1.0",
+    "gulp-sourcemaps": "3.0.0",
+    "postcss": "8.2.8",
+    "stylelint": "13.12.0",
+    "stylelint-config-htmlacademy": "0.1.4"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp styles",
+    "start": "gulp"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AndrewChernigovsky/605037-cat-energy-22.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AndrewChernigovsky/605037-cat-energy-22/issues"
-  },
-  "homepage": "https://github.com/AndrewChernigovsky/605037-cat-energy-22#readme"
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.scss"
+  ],
+  "engines": {
+    "node": "14.15.0"
+  }
 }
