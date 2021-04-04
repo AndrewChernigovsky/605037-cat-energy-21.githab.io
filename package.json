@@ -1,1 +1,19 @@
-{}
+{
+  "name": "605037-cat-energy-22",
+  "description": "* Студент: [Andrey Izosimov](https://up.htmlacademy.ru/adaptive/22/user/605037). * Наставник: `Ivan 🤪 Zharkov`.",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrewChernigovsky/605037-cat-energy-22.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndrewChernigovsky/605037-cat-energy-22/issues"
+  },
+  "homepage": "https://github.com/AndrewChernigovsky/605037-cat-energy-22#readme"
+}
