@@ -1,0 +1,38 @@
+.developed {
+  padding-top: 6px;
+}
+
+.developed__link {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $gray;
+  text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--position {
+    display: flex;
+    justify-content: space-between;
+    min-width: 280px;
+    align-items: center;
+  }
+}
+
+.developed__link:hover .developed__logo {
+  stroke: $green;
+}
+
+.developed__logo {
+  &:hover {
+    stroke: $green;
+  }
+
+  &:active {
+    stroke: $green;
+    opacity: 0.3;
+  }
+}

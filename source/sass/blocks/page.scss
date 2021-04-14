@@ -2,10 +2,6 @@
   height: 100%;
 }
 
-.page__image {
-  padding: 9px 0;
-}
-
 .page__body {
   position: relative;
   background-color: $white;
@@ -18,27 +14,4 @@
   font-size: 16px;
   color: $black;
   min-height: 100%;
-}
-
-.container {
-  min-width: 280px;
-  margin: 0 auto;
-  padding: 0 20px;
-
-  @media (min-width: $mobile-width-only) {
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-
-  @media (min-width: $tablet-width) {
-    min-width: 768px;
-    margin: 0 auto;
-    padding: 0 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-width: 1220px;
-    margin: 0 auto;
-    padding: 0 110px;
-  }
 }

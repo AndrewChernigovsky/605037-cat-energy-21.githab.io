@@ -35,22 +35,22 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
 
-  & a {
-    position: relative;
-    display: block;
-    padding: 12px 21px;
-    padding-bottom: 13px;
-    font-size: 18px;
-    line-height: 24px;
-    color: $black;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    background-color: $white;
-    border-top: 1px solid $spcl_gray3;
-    border-bottom: 1px solid $spcl_gray3;
-  }
+.main-nav__link {
+  position: relative;
+  display: block;
+  padding: 12px 21px;
+  padding-bottom: 13px;
+  font-size: 18px;
+  line-height: 24px;
+  color: $black;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $white;
+  border-top: 1px solid $spcl_gray3;
+  border-bottom: 1px solid $spcl_gray3;
 }
 
 .main-nav--closed .main-nav__toggle {

@@ -1,12 +1,12 @@
-.main-header {
-  background-color: $gray;
-}
-
 .page-header {
   min-height: 66px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.page-header__logo {
+  cursor: pointer;
 }
 
 .page-header__image {
@@ -17,8 +17,4 @@
   &:active {
     opacity: 0.6;
   }
-}
-
-.page-header__logo {
-  cursor: pointer;
 }
