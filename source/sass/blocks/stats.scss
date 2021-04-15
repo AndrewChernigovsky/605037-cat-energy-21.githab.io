@@ -1,0 +1,49 @@
+.stats__wrapper {
+  display: grid;
+  grid-template-columns: 45% 41%;
+  gap: 12%;
+}
+
+.stats__wrappers {
+  text-align: center;
+}
+
+.stats__title {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+  margin-bottom: 4px;
+
+  &--icon {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 124px;
+      height: 56px;
+      right: -2px;
+      top: -14px;
+      background-image: url("../img/icons/weight_icon.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+}
+
+.stats__title-total {
+  font-size: 14px;
+  line-height: 20px;
+  color: $black;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.stats__subtitle {
+  font-size: 12px;
+  line-height: 12px;
+  font-family: "Arial", sans-serif;
+  color: $gray;
+}

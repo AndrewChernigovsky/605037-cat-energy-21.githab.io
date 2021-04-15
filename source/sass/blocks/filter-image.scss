@@ -1,0 +1,18 @@
+.fiter-image {
+  height: auto;
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
+}
+
+.fiter-image__pet {
+  padding-top: 16px;
+  object-fit: contain;
+  width: 100%;
+  height: min-content;
+}

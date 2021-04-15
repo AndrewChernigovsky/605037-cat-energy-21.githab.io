@@ -1,0 +1,17 @@
+.example {
+  background-color: $lgt_gray;
+}
+
+.example__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $black;
+}
+
+.example__subtitle {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Arial", sans-serif;
+  margin-bottom: 18px;
+}
