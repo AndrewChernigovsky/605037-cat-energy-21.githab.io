@@ -8,4 +8,12 @@
   padding: 0 15px;
   text-align: center;
   line-height: 40px;
+
+  &:hover {
+    background-color: $green_hover_link;
+  }
+
+  &:active {
+    color: $lgt_white;
+  }
 }

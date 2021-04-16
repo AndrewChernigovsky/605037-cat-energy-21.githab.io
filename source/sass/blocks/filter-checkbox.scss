@@ -1,8 +1,6 @@
 .filter-checkbox {
-  margin-top: 26px;
-  text-align: center;
-  padding-bottom: 20px;
   color: $black;
+  position: relative;
 }
 
 .filter-checkbox__wrapper {
@@ -20,10 +18,11 @@
 }
 
 .filter-checkbox__label {
-  position: relative;
   display: inline-block;
-  width: 84px;
+  min-width: 84px;
   height: 14px;
+  padding-left: 45px;
+  text-transform: uppercase;
 }
 
 .filter-checkbox__input {
@@ -64,4 +63,24 @@
 
 .filter-checkbox__input:checked + .filter-checkbox__slider::before {
   transform: translateX(40px);
+}
+
+.filter-checkbox__input + .filter-checkbox__label::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  border: 2px solid $spcl_gray2;
+}
+
+.filter-checkbox__input:checked + .filter-checkbox__label::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/icons/icon-checkbox.svg");
+  left: 6px;
+  top: 12px;
+  width: 18px;
+  height: 14px;
 }

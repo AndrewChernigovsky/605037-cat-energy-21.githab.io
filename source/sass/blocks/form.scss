@@ -1,0 +1,121 @@
+.form__fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form__label {
+  color: $gray;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 100%;
+  text-transform: uppercase;
+  position: relative;
+
+  &::placeholder {
+    text-transform: uppercase;
+  }
+}
+
+.form__input {
+  flex-grow: 1;
+  max-width: 90%;
+  min-height: 45px;
+  margin-left: 13px;
+  padding-left: 9px;
+  text-align: left;
+  border: 1px solid $lgt_form_gray;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding-left: 10px;
+  }
+}
+
+.form__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.form__textarea::placeholder {
+  text-transform: uppercase;
+  padding: 0 11px;
+  padding-top: 15px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.form__character {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  line-height: 10px;
+  margin-bottom: 42px;
+}
+
+.form__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  line-height: 22px;
+  margin-bottom: 8px;
+}
+
+.form__email {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  line-height: 57px;
+}
+
+.form__comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.form__filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  line-height: 42px;
+}
+
+.form__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 30px;
+  position: relative;
+
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 50%;
+  //   height: 21px;
+  //   right: 17px;
+  //   top: 16px;
+  //   background-color: $green;
+  // }
+}
+
+.form__title-wrapper {
+  display: flex;
+}
+
+.form__line {
+  background-color: $green;
+  flex-grow: 1;
+  height: 2px;
+  width: 2px;
+}

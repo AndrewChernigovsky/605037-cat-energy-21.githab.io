@@ -5,11 +5,12 @@
   text-align: center;
   align-items: center;
   background-color: $lgt_gray;
+  line-height: 0;
 }
 
 .social__link {
   &--logo {
-    padding-top: 52px;
+    padding-top: 48px;
     padding-bottom: 30px;
     border-bottom: 1px solid $spcl_gray4;
   }
@@ -29,14 +30,14 @@
 }
 
 .social__icons {
-  padding-top: 39px;
-  padding-bottom: 17px;
+  padding-top: 38px;
+  padding-bottom: 14px;
   border-bottom: 1px solid $spcl_gray4;
 
   &-wrapper {
     display: flex;
     justify-content: space-between;
-    width: 127px;
+    max-width: 46%;
     margin: 0 auto;
     align-items: center;
   }
