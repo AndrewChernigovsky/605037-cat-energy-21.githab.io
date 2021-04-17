@@ -36,87 +36,89 @@
     </nav>
   </header>
   <main class="page-main">
-    <section class="form-pets form-pets__wrapper container">
-      <h1 class="form-pets__title">Подбор программы</h1>
-      <h2 class="form-pets__subtitle">Заполните анкету, и мы подберем<br>программу питания для вашего кота</h2>
-      <form class="form" method="POST" action="https://echo.htmlacademy.ru">
-        <fieldset class="form__fieldset form__character">
-          <label class="form__label">
-            Имя:* <input class="form__input" type="text" name="name" aria-label="Введите имя питомца"  placeholder="Барсик">
-          </label><br>
-          <label class="form__label">
-            Вес (кг):* <input class="form__input" type="text" name="weight" aria-label="Введите вес питомца"  placeholder="7">
-          </label><br>
-          <label class="form__label">
-            Возраст (лет):* <input class="form__input" type="text" name="age" aria-label="Введите возраст питомца"  placeholder="7">
-          </label><br>
-        </fieldset>
-        <fieldset class="form__fieldset form__info">
-          <ul class="form__list">
-            <li class="form__item filter-option filter-radio">
-              <input class="visually-hidden filter-radio__input filter-input" type="radio" name="programma" value="slim"
-                id="filter-slim" checked>
-              <label class="filter-radio__label" for="filter-slim">Похудение</label>
-            </li>
-            <li class="form__item filter-option filter-radio">
-              <input class="visually-hidden filter-radio__input filter-input" type="radio" name="programma" value="slim"
-                id="filter-fat">
-              <label class="filter-radio__label" for="filter-fat">Набор Массы</label>
-            </li>
-            <li class="form__item filter-option filter-radio">
-              <input class="visually-hidden filter-radio__input filter-input" type="radio" name="programma" value="slim"
-                id="filter-advice">
-              <label class="filter-radio__label" for="filter-advice">Не знаю (нужен ваш совет)</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form__fieldset form__email">
-          <div class="form__title-wrapper">
-            <h2 class="form__title">Контактные данные (владельца кота)</h2>
-            <span class="form__line"></span>
-          </div>
-          <label class="form__label form__email">
-            Email:* <input class="form__input" id="email-user" type="email" name="email"
-              aria-label="Введите емаил" placeholder="example@gmail.com">
-          </label><br>
-          <label class="form__label form__telephone">
-            Телефон:* <input class="form__input" id="telephone-user" type="tel"
-              name="telephone-number" aria-label="Введите вес питомца" placeholder="8 (960) 900-60-90">
-          </label>
-        </fieldset>
-        <fieldset class="form__fieldset form__comment">
-          <h2 class="form__title">Комментарий</h2>
-          <textarea class="form__textarea" name="comment" id="comment-field"
-            placeholder="Расскажите обо всех повадках кота" rows="6" wrap="hard"></textarea>
-        </fieldset>
-        <fieldset class="form__fieldset form__filter">
-          <h2 class="form__title">Дополнительно</h2>
-          <ul class="form__list">
-            <li class="form__item filter-option filter-checkbox">
-              <input class="filter-checkbox__input filter-input" type="checkbox" name="sugar"
-                id="filter-sugar" checked>
-              <label class="filter-checkbox__label" for="filter-sugar">сахарозаменитель</label>
-            </li>
-            <li class="form__item filter-option filter-checkbox">
-              <input class="filter-checkbox__input filter-input" type="checkbox" name="water"
-                id="filter-water">
-              <label class="filter-checkbox__label" for="filter-water">питьевая вода</label>
-            </li>
-            <li class="form__item filter-option filter-checkbox">
-              <input class="filter-checkbox__input filter-input" type="checkbox" name="milk"
-                id="filter-milk" checked>
-              <label class="filter-checkbox__label" for="filter-milk">молоко</label>
-            </li>
-            <li class="form__item filter-option filter-checkbox">
-              <input class="filter-checkbox__input filter-input" type="checkbox" name="vitamins"
-                id="filter-vitamins">
-              <label class="filter-checkbox__label" for="filter-vitamins">витамины</label>
-            </li>
-          </ul>
-          <button class="button link button__push" type="submit">отправить заявку</button>
-        </fieldset>
-      </form>
-      <p class="form-pets__mark">* — Обязательные поля</p>
+    <section class="form-pets container">
+      <div class="form-pets__wrapper">
+        <h1 class="form-pets__title">Подбор программы</h1>
+        <h2 class="form-pets__subtitle">Заполните анкету, и мы подберем<br>программу питания для вашего кота</h2>
+        <form class="form" method="POST" action="https://echo.htmlacademy.ru">
+          <fieldset class="form__fieldset form__character">
+            <label class="form__label">
+              Имя:* <input class="form__input" type="text" name="name" aria-label="Введите имя питомца"  placeholder="Барсик">
+            </label><br>
+            <label class="form__label">
+              Вес (кг):* <input class="form__input" type="text" name="weight" aria-label="Введите вес питомца"  placeholder="7">
+            </label><br>
+            <label class="form__label">
+              Возраст (лет):* <input class="form__input" type="text" name="age" aria-label="Введите возраст питомца"  placeholder="7">
+            </label><br>
+          </fieldset>
+          <fieldset class="form__fieldset form__info">
+            <ul class="form__list">
+              <li class="form__item filter-option filter-radio">
+                <input class="visually-hidden filter-radio__input filter-input" type="radio" name="programma" value="slim"
+                  id="filter-slim" checked>
+                <label class="filter-radio__label" for="filter-slim">Похудение</label>
+              </li>
+              <li class="form__item filter-option filter-radio">
+                <input class="visually-hidden filter-radio__input filter-input" type="radio" name="programma" value="slim"
+                  id="filter-fat">
+                <label class="filter-radio__label" for="filter-fat">Набор Массы</label>
+              </li>
+              <li class="form__item filter-option filter-radio">
+                <input class="visually-hidden filter-radio__input filter-input" type="radio" name="programma" value="slim"
+                  id="filter-advice">
+                <label class="filter-radio__label" for="filter-advice">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__fieldset form__email">
+            <div class="form__title-wrapper">
+              <h2 class="form__title">Контактные данные (владельца кота)</h2>
+              <span class="form__line"></span>
+            </div>
+            <label class="form__label">
+              Email:* <input class="form__input form__icon-email" id="email-user" type="email" name="email"
+                aria-label="Введите емаил" placeholder="example@gmail.com">
+            </label><br>
+            <label class="form__label">
+              Телефон:* <input class="form__input form__icon-phone" id="telephone-user" type="tel"
+                name="telephone-number" aria-label="Введите вес питомца" placeholder="8 (960) 900-60-90">
+            </label>
+          </fieldset>
+          <fieldset class="form__fieldset form__comment">
+            <h2 class="form__title">Комментарий</h2>
+            <textarea class="form__textarea" name="comment" id="comment-field"
+              placeholder="Расскажите обо всех повадках кота" rows="6" wrap="hard"></textarea>
+          </fieldset>
+          <fieldset class="form__fieldset form__filter">
+            <h2 class="form__title">Дополнительно</h2>
+            <ul class="form__list">
+              <li class="form__item filter-option filter-checkbox">
+                <input class="filter-checkbox__input filter-input" type="checkbox" name="sugar"
+                  id="filter-sugar" checked>
+                <label class="filter-checkbox__label" for="filter-sugar">сахарозаменитель</label>
+              </li>
+              <li class="form__item filter-option filter-checkbox">
+                <input class="filter-checkbox__input filter-input" type="checkbox" name="water"
+                  id="filter-water">
+                <label class="filter-checkbox__label" for="filter-water">питьевая вода</label>
+              </li>
+              <li class="form__item filter-option filter-checkbox">
+                <input class="filter-checkbox__input filter-input" type="checkbox" name="milk"
+                  id="filter-milk" checked>
+                <label class="filter-checkbox__label" for="filter-milk">молоко</label>
+              </li>
+              <li class="form__item filter-option filter-checkbox">
+                <input class="filter-checkbox__input filter-input" type="checkbox" name="vitamins"
+                  id="filter-vitamins">
+                <label class="filter-checkbox__label" for="filter-vitamins">витамины</label>
+              </li>
+            </ul>
+            <button class="button link button--push" type="submit">отправить заявку</button>
+          </fieldset>
+        </form>
+        <p class="form-pets__mark">* — Обязательные поля</p>
+      </div>
     </section>
   </main>
 

@@ -8,15 +8,14 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
-  <header class="page-header wrapper">
+  <header class="page-header container">
     <a class="page-header__logo"><img class="page-header__image" src="img/logo/logotype.png" width="191" height="38"
         alt="logotype"></a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav-nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -29,10 +28,11 @@
             <a class="main-nav__link">католог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">подбор программы</a>
+            <a class="main-nav__link" href="catalog.html">подбор программы</a>
           </li>
         </ul>
       </div>
+
     </nav>
   </header>
 
@@ -323,6 +323,7 @@
     </div>
   </footer>
 
+  <script src="js/menu.js"></script>
   <script src="js/map.js"></script>
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3fw1w75fJqaNw1vjbIQwwCeKjIvuSPf0&callback=initMap&libraries=&v=weekly"
