@@ -1,9 +1,9 @@
 .cooperation__wrapper {
-  display: grid;
-  padding-top: 13px;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  margin-bottom: 11px;
+  background-color: $lgt_gray;
+  display: flex;
+  padding: 15px 25px 16px 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .cooperation__title {
