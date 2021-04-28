@@ -1,0 +1,21 @@
+.filter-pets {
+  position: relative;
+}
+
+.filter-pets__wrapper {
+  @media (max-width: $mobile-width-only) {
+    max-height: 350px;
+    padding: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: $lgt_gray;
+    max-height: 537px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-top: 94px;
+    padding-right: 99px;
+  }
+}

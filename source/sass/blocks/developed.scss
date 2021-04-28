@@ -1,5 +1,11 @@
 .developed {
-  padding-top: 6px;
+  @media (min-width: $tablet-width) {
+    padding-left: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .developed__link {
@@ -17,8 +23,21 @@
   &--position {
     display: flex;
     justify-content: space-between;
-    min-width: 280px;
     align-items: center;
+
+    @media (max-width: $mobile-width-only) {
+      min-width: 280px;
+    }
+
+    @media (min-width: $tablet-width) {
+      min-width: none;
+      padding-bottom: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 160px;
+      padding-left: 19px;
+    }
   }
 }
 
