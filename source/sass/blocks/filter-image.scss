@@ -65,9 +65,10 @@
 
   @media (max-width: $mobile-width-only) {
     height: 289px;
-    min-width: 305px;
+    width: 309px;
+    margin: 0 auto;
     overflow: hidden;
-    right: 4px;
+    right: 6px;
   }
 
   @media (min-width: $tablet-width) {
@@ -76,6 +77,12 @@
     overflow: hidden;
     right: 222px;
     top: -93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 527px;
+    right: 191px;
+    top: -325px;
   }
 }
 
@@ -96,5 +103,10 @@
     overflow: hidden;
     top: -671px;
     left: 356px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -865px;
+    left: 386px;
   }
 }

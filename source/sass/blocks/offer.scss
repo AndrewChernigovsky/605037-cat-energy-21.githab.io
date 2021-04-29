@@ -6,8 +6,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 80px;
-    margin-bottom: 609px;
+    margin-bottom: 84px;
+    min-width: 1440px;
+    max-width: 1440px;
+    min-height: 523px;
+    position: relative;
   }
 }
 
@@ -21,6 +24,8 @@
     background-position: calc((100% - 40px) / 2) 0;
     z-index: 0;
     margin-bottom: 195px;
+    display: flex;
+    justify-content: stretch;
 
     &::before {
       position: absolute;
@@ -63,9 +68,9 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     height: 689px;
-    top: 0;
+    top: -164px;
     width: 717px;
-    right: -217px;
+    right: 1px;
     background-image: url("../../img/content/catbg-main-desktop.jpg");
     background-repeat: no-repeat;
     z-index: -2;
@@ -75,8 +80,8 @@
       content: "";
       background-color: $green_opacity;
       background-repeat: no-repeat;
-      top: 0;
-      left: 0;
+      top: 1px;
+      left: -2px;
       width: 720px;
       height: 689px;
       z-index: -1;
@@ -99,12 +104,14 @@
 .offer__wrappers {
   @media (max-width: $mobile-width-only) {
     order: 1;
-    position: absolute;
     min-width: calc((100% - 45%) * 1.5);
-    margin-top: 0;
-    padding: 0;
     z-index: 3;
     top: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   @media (min-width: $tablet-width) {
@@ -127,7 +134,8 @@
     line-height: 36px;
     text-align: center;
     padding: 3px 0;
-    margin-bottom: 23px;
+    padding-top: 182px;
+    margin-bottom: 8px;
     font-weight: 400;
   }
 
@@ -159,6 +167,7 @@
     line-height: 14px;
     color: $white;
     text-align: center;
+    padding-bottom: 292px;
   }
 
   @media (min-width: $tablet-width) {
@@ -180,12 +189,7 @@
 .offer__link {
   @media (max-width: $mobile-width-only) {
     order: 1;
-    position: absolute;
-    min-width: calc((100% - 45%) * 1.5);
-    padding: 0 8px;
-    z-index: 3;
-    top: 441px;
-    left: 20px;
+    padding: 0 73px;
   }
 
   &--position {

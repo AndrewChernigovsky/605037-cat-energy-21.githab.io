@@ -12,10 +12,14 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
     min-width: 100%;
     background-color: $lgt_gray;
+    padding: 0 110px;
     padding-bottom: 44px;
+    margin-bottom: 0;
+    max-height: 417px;
+    min-height: 100%;
   }
 }
 
@@ -24,6 +28,7 @@
     max-width: 36%;
     margin: 0;
     padding: 0;
+    margin-top: -113px;
   }
 }
 

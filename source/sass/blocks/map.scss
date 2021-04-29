@@ -1,6 +1,4 @@
 .map {
-  min-width: 100%;
-  min-height: 362px;
   background-image: url("../img/content/map.png");
   object-fit: cover;
   background-repeat: no-repeat;
@@ -8,14 +6,17 @@
 
   @media (max-width: $mobile-width-only) {
     padding: 0;
+    min-width: 100%;
+    min-height: 362px;
   }
 
   @media (min-width: $tablet-width) {
     min-height: 405px;
-    padding: 0;
+    max-width: 100%;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 100%;
+    padding: 0 110px;
   }
 }

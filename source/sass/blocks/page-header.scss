@@ -20,8 +20,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 26px;
+    padding-bottom: 28px;
+    max-width: 1440px;
     min-width: 1220px;
   }
 }

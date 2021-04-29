@@ -16,6 +16,10 @@
     justify-content: space-between;
     align-items: flex-start;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: wrap;
+  }
 }
 
 .stats__wrapper {
@@ -44,7 +48,7 @@
     max-width: 366px;
     margin: 0;
     padding: 0;
-    margin-bottom: 38px;
+    margin-bottom: 54px;
   }
 }
 
@@ -119,6 +123,10 @@
     margin-top: 0;
     padding-top: 8px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
 }
 
 .stats__cost {
@@ -147,7 +155,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 327px;
+    min-width: 328px;
     font-size: 20px;
     line-height: 29px;
     font-weight: 400;
@@ -171,7 +179,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
-    margin-top: 20px;
+    margin-top: 0;
   }
 }
 
