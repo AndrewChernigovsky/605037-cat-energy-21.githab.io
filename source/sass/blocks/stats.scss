@@ -31,6 +31,7 @@
     justify-content: space-between;
     max-height: 475px;
     padding: 0;
+    max-width: 280px;
   }
 
   @media (min-width: $tablet-width) {
@@ -41,7 +42,7 @@
     margin: 0;
     padding: 0;
     margin-bottom: 179px;
-    min-width: 366px;
+    max-width: 366px;
   }
 
   @media (min-width: $desktop-width) {

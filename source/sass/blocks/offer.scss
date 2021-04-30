@@ -2,23 +2,23 @@
   min-width: 100%;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 630px;
+    margin-bottom: 528px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 84px;
-    min-width: 1440px;
-    max-width: 1440px;
+    max-width: 1220px;
     min-height: 523px;
     position: relative;
   }
 }
 
 .offer__wrapper {
+  position: relative;
+
   @media (max-width: $mobile-width-only) {
-    position: relative;
     height: 303px;
-    min-width: 280px;
+    margin: 0 auto;
     background-image: url("../img/content/catbg-main.jpg");
     background-repeat: no-repeat;
     background-position: calc((100% - 40px) / 2) 0;
@@ -26,17 +26,6 @@
     margin-bottom: 195px;
     display: flex;
     justify-content: stretch;
-
-    &::before {
-      position: absolute;
-      content: "";
-      background-image: url("../../img/content/index-can-mobile.png");
-      background-repeat: no-repeat;
-      top: 168px;
-      left: 20px;
-      width: 259px;
-      height: 265px;
-    }
 
     &::after {
       position: absolute;
@@ -52,59 +41,43 @@
   }
 
   @media (min-width: $tablet-width) {
-    &::before {
-      position: absolute;
-      content: "";
-      background-image: url("../../img/content/tablet-can-mobile.png");
-      background-repeat: no-repeat;
-      top: 343px;
-      left: 27px;
-      width: 659px;
-      height: 607px;
-      z-index: -1;
-    }
+    max-width: 768px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    height: 689px;
-    top: -164px;
-    width: 717px;
-    right: 1px;
-    background-image: url("../../img/content/catbg-main-desktop.jpg");
-    background-repeat: no-repeat;
-    z-index: -2;
+    &::before {
+      position: absolute;
+      content: "";
+      height: 689px;
+      top: -167px;
+      width: 717px;
+      right: 1px;
+      background-image: url("../../img/content/catbg-main-desktop.jpg");
+      background-repeat: no-repeat;
+      z-index: -2;
+    }
 
     &::after {
       position: absolute;
       content: "";
       background-color: $green_opacity;
       background-repeat: no-repeat;
-      top: 1px;
-      left: -2px;
+      top: -168px;
+      left: 50px;
       width: 720px;
       height: 689px;
       z-index: -1;
-    }
-
-    &::before {
-      position: absolute;
-      content: "";
-      background-image: url("../../img/content/desktop-can-image.png");
-      background-repeat: no-repeat;
-      top: 136px;
-      left: -162px;
-      width: 515px;
-      height: 555px;
-      z-index: 1;
     }
   }
 }
 
 .offer__wrappers {
+  position: relative;
+
   @media (max-width: $mobile-width-only) {
     order: 1;
-    min-width: calc((100% - 45%) * 1.5);
+    max-width: 280px;
     z-index: 3;
     top: 0;
     margin: 0 auto;
@@ -112,10 +85,34 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../../img/content/index-can-mobile.png");
+      background-repeat: no-repeat;
+      top: 168px;
+      left: 0;
+      width: 259px;
+      height: 265px;
+    }
   }
 
   @media (min-width: $tablet-width) {
-    max-width: 533px;
+    max-width: 625px;
+    padding-left: 110px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../../img/content/tablet-can-mobile.png");
+      background-repeat: no-repeat;
+      top: 201px;
+      left: 27px;
+      width: 665px;
+      height: 600px;
+      z-index: -1;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -124,6 +121,18 @@
     position: absolute;
     left: -640px;
     top: 161px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../../img/content/tablet-can-mobile.png");
+      background-repeat: no-repeat;
+      top: 201px;
+      left: 27px;
+      width: 665px;
+      height: 600px;
+      z-index: -1;
+    }
   }
 }
 
@@ -144,7 +153,9 @@
     line-height: 60px;
     font-weight: 400;
     color: $black;
-    margin-top: 57px;
+    max-width: 440px;
+    margin-top: 59px;
+    padding-left: 5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -175,7 +186,8 @@
     line-height: 20px;
     font-weight: 400;
     color: $black;
-    margin-bottom: 15px;
+    margin-bottom: 49px;
+    padding-left: 6px;
   }
 
   @media (min-width: $desktop-width) {
@@ -203,11 +215,9 @@
     line-height: 20px;
     text-transform: uppercase;
     padding: 7px 26px;
-    left: 113px;
-    top: 372px;
     align-items: center;
-    position: absolute;
     display: flex;
+    max-width: 192px;
   }
 
   @media (min-width: $desktop-width) {

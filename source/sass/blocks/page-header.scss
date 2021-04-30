@@ -3,11 +3,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-width: 280px;
+  position: relative;
   flex-wrap: wrap;
 
   @media (max-width: $mobile-width-only) {
     margin-bottom: -2px;
+    max-width: 280px;
   }
 
   @media (min-width: $tablet-width) {
@@ -15,15 +16,16 @@
     align-items: center;
     justify-content: space-between;
     min-height: 60px;
-    padding-top: 13px;
-    min-width: 708px;
+    padding-top: 11px;
+    max-width: 768px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 26px;
     padding-bottom: 28px;
-    max-width: 1440px;
     min-width: 1220px;
+    max-width: 1220px;
   }
 }
 

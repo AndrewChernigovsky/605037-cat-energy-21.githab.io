@@ -24,6 +24,15 @@
 }
 
 .example__wrapper {
+  @media (max-width: $mobile-width-only) {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 708px;
+  }
+
   @media (min-width: $desktop-width) {
     max-width: 36%;
     margin: 0;
@@ -31,7 +40,6 @@
     margin-top: -113px;
   }
 }
-
 
 .example__title {
   font-weight: 400;

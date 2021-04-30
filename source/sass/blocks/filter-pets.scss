@@ -1,5 +1,16 @@
 .filter-pets {
   position: relative;
+  margin: 0 auto;
+  background-color: $lgt_gray;
+
+  @media (max-width: $mobile-width-only) {
+    max-width: 280px;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-height: 537px;
+    max-width: 100%;
+  }
 }
 
 .filter-pets__wrapper {
@@ -9,9 +20,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    background-color: $lgt_gray;
-    max-height: 537px;
-    max-width: 100%;
+    max-width: 708px;
   }
 
   @media (min-width: $desktop-width) {

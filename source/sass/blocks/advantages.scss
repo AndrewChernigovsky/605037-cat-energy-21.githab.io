@@ -8,6 +8,10 @@
 }
 
 .advantages__wrapper {
+  @media (min-width: $tablet-width) {
+    max-width: 708px;
+  }
+
   @media (min-width: $desktop-width) {
     min-width: 1220px;
     display: grid;
@@ -29,10 +33,9 @@
   background-color: $lgt_gray;
 
   @media (max-width: $mobile-width-only) {
-    padding-left: 22px;
     margin-bottom: 19px;
     min-height: 266px;
-    min-width: 240px;
+    min-width: 280px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -67,6 +70,10 @@
 }
 
 .advantages__pet-wrapper {
+  @media (max-width: $mobile-width-only) {
+    padding-left: 22px;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;

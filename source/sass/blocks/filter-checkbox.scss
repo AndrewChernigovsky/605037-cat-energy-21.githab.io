@@ -1,10 +1,12 @@
 .filter-checkbox {
   color: $black;
   position: absolute;
+  margin: 0 auto;
 
   @media (max-width: $mobile-width-only) {
     top: 274px;
-    min-width: 300px;
+    max-width: 320px;
+    min-width: 280px;
   }
 
   @media (min-width: $tablet-width) {
@@ -16,10 +18,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
 
   @media (max-width: $mobile-width-only) {
-    padding: 0 58px;
-    min-width: 203px;
+    max-width: 202px;
   }
 
   @media (min-width: $tablet-width) {
@@ -77,9 +79,9 @@
   transition: 0.4s;
 
   @media (max-width: $mobile-width-only) {
-    top: 25px;
-    left: 118px;
-    right: 112px;
+    top: 22px;
+    left: 99px;
+    right: 96px;
     bottom: 21px;
   }
 
@@ -97,9 +99,9 @@
     @media (max-width: $mobile-width-only) {
       position: absolute;
       content: "";
-      height: 6px;
-      width: 35px;
-      left: 7px;
+      height: 8px;
+      width: 37px;
+      left: 5px;
       bottom: 1px;
       border-radius: 6px;
       background-color: $green;
