@@ -1,4 +1,15 @@
 .page-header {
+  @media (max-width: $mobile-width-only) {
+  }
+
+  @media (min-width: $tablet-width) {
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+}
+
+.page-header__wrapper {
   min-height: 66px;
   display: flex;
   align-items: center;
@@ -9,6 +20,7 @@
   @media (max-width: $mobile-width-only) {
     margin-bottom: -2px;
     max-width: 280px;
+    margin: 0 auto;
   }
 
   @media (min-width: $tablet-width) {
@@ -16,14 +28,14 @@
     align-items: center;
     justify-content: space-between;
     min-height: 60px;
-    padding-top: 11px;
-    max-width: 768px;
+    padding-top: 22px;
     margin: 0 auto;
+    max-width: 708px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 26px;
-    padding-bottom: 28px;
+    padding-top: 54px;
+    padding-bottom: 0;
     min-width: 1220px;
     max-width: 1220px;
   }

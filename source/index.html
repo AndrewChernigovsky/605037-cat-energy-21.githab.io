@@ -13,7 +13,7 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header container">
+    <div class="page-header__wrapper container">
       <a class="page-header__logo-mobile"><img class="page-header__logo-mobile" src="img/logo/logo-mobile.svg"
           width="191" height="38" alt="logotype"></a>
       <a class="page-header__logo-tablet"><img class="page-header__logo-tablet" src="img/logo/logo-tablet.svg"
@@ -53,8 +53,8 @@
       </div>
     </section>
 
-    <!-- <section class="advantages">
-      <div class="advantages__wrapper container">
+    <section class="advantages">
+      <div class="advantages__wrapper">
         <div class="advantages__pet">
           <div class="advantages__pet-wrapper">
             <h3 class="advantages__title advantages__title--slim">похудение</h3>
@@ -98,32 +98,32 @@
 
     </section>
     <section class="example">
-      <div class="example__wrapper  container">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__subtitle">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-          Отличный результат без изнуряющих тренировок!
-          При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
+      <div class="example__wrappers">
+        <div class="example__wrapper">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__subtitle">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+            Отличный результат без изнуряющих тренировок!
+            При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
 
-        <div class="stats">
-          <div class="stats__wrapper container">
-            <div class="stats__wrappers stats__wrappers--weight">
-              <p class="stats__title stats__title--icon-weight">5 кг</p>
-              <small class="stats__subtitle stats__subtitle--weight">снижение веса</small>
+          <div class="stats">
+            <div class="stats__wrapper container">
+              <div class="stats__wrappers stats__wrappers--weight">
+                <p class="stats__title stats__title--icon-weight">5 кг</p>
+                <small class="stats__subtitle stats__subtitle--weight">снижение веса</small>
+              </div>
+              <div class="stats__wrappers stats__wrappers--time">
+                <p class="stats__title stats__title--icon-days">60 дней</p>
+                <small class="stats__subtitle stats__subtitle--days">затрачено времени</small>
+              </div>
             </div>
-            <div class="stats__wrappers stats__wrappers--time">
-              <p class="stats__title stats__title--icon-days">60 дней</p>
-              <small class="stats__subtitle stats__subtitle--days">затрачено времени</small>
+            <div class="stats__cost">
+              <h3 class="stats__title-total">Затраты на питание:</h3>
+              <p class="stats__subtitle-cost">15 000 руб.</p>
             </div>
-          </div>
-          <div class="stats__cost">
-            <h3 class="stats__title-total">Затраты на питание:</h3>
-            <p class="stats__subtitle-cost">15 000 руб.</p>
           </div>
         </div>
-      </div>
-
 
         <div class="filter-pets">
           <div class="filter-pets__wrapper container">
@@ -147,22 +147,24 @@
             </div>
           </div>
         </div>
+      </div>
 
-    </section> -->
+    </section>
   </main>
 
-  <!-- <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <section class="cooperation">
-        <div class="cooperation__wrapper">
+  <footer class="page-footer">
+    <section class="cooperation">
+      <div class="cooperation__wrapper">
+        <div class="cooperation__adress">
           <h2 class="cooperation__title">приглашаем<br>к сотрудничеству<br>дилеров!</h2>
           <p class="cooperation__subtitle">ул. Большая<br> Конюшенная, д. 19/8<br>Санкт-Петербург</p>
         </div>
-        <div class="map" id="map"></div>
-      </section>
-      <div class="social">
-        <div class="social__wrapper container">
-          <a class="social__link social__link--logo"><img class="social__logo" src="img/logo/logotype-text.png"
+      </div>
+      <div class="map" id="map"></div>
+    </section>
+    <div class="social">
+      <div class="social__wrapper">
+        <a class="social__link social__link--logo"><img class="social__logo" src="img/logo/logotype-text.png"
             width="101" height="18" alt="logotype"></a>
         <div class="social__icons">
           <div class="social__icons-wrapper">
@@ -204,9 +206,9 @@
             </div>
           </a>
         </div>
-        </div>
       </div>
-  </footer> -->
+    </div>
+  </footer>
 
   <script src="js/menu.js"></script>
   <script src="js/map.js"></script>

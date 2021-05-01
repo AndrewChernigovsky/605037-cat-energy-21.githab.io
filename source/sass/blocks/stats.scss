@@ -19,6 +19,7 @@
 
   @media (min-width: $desktop-width) {
     flex-wrap: wrap;
+    max-width: 365px;
   }
 }
 
@@ -195,6 +196,7 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
+    background-color: $white;
   }
 
   &--weight {

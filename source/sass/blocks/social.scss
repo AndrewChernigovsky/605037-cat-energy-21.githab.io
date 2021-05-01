@@ -1,6 +1,10 @@
 .social {
   background-color: $lgt_gray;
   max-width: 100%;
+
+  @media (min-width: $desktop-width) {
+    min-width: 100%;
+  }
 }
 
 .social__wrapper {
@@ -22,7 +26,18 @@
     min-height: 94px;
     text-align: inherit;
     max-width: 708px;
+    padding: 0 30px;
+    margin: 0 auto;
     padding-top: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 142px;
+    max-width: 1220px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -90,8 +105,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      max-width: 48%;
-      margin: 0 63px;
+      max-width: 44%;
+      padding-left: 48px;
     }
   }
 

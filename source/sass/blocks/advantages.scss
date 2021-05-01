@@ -5,6 +5,18 @@
   flex-direction: column;
   min-width: 220px;
   margin-bottom: -18px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 1220px;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 110px;
+    margin-bottom: -18px;
+  }
 }
 
 .advantages__wrapper {
@@ -13,22 +25,22 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 1220px;
     min-width: 1220px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    margin-bottom: 72px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 42px;
   }
 }
 
 .advantages__pet {
   min-height: 266px;
-  min-width: 240px;
+  max-width: 475px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 0 auto;
   margin-bottom: 23px;
   background-color: $lgt_gray;
 
@@ -48,24 +60,13 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 52px;
-    margin-bottom: 30px;
-    padding-bottom: 35px;
+    margin-bottom: 31px;
+    padding-bottom: 34px;
     padding-right: 276px;
-
-    &:last-child {
-      margin-bottom: 48px;
-    }
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
-    padding-bottom: 38px;
-    padding-right: 0;
-    padding-left: 0;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
+    padding-right: 43px;
   }
 }
 
@@ -83,9 +84,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 518px;
-    padding-top: 41px;
-    padding-left: 51px;
+    min-width: 437px;
+    padding-top: 43px;
+    padding-left: 0;
+    padding-right: 12px;
   }
 }
 
@@ -112,6 +114,7 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 59px;
     text-align: center;
+    min-width: 490px;
   }
 
   &--slim {
@@ -213,6 +216,8 @@
     }
 
     @media (min-width: $desktop-width) {
+      padding-left: 19px;
+
       &::before {
         content: "";
         position: absolute;
