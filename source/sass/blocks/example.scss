@@ -18,26 +18,13 @@
 }
 
 .example__wrappers {
-  @media (max-width: $mobile-width-only) {
-  }
-
-  @media (min-width: $tablet-width) {
-  }
-
   @media (min-width: $desktop-width) {
     position: absolute;
     top: -114px;
   }
 }
 
-
 .example__wrapper {
-  @media (max-width: $mobile-width-only) {
-  }
-
-  @media (min-width: $tablet-width) {
-  }
-
   @media (min-width: $desktop-width) {
     position: relative;
   }
