@@ -17,31 +17,29 @@
   }
 }
 
-.example__wrapper {
-  margin: 0 auto;
-
+.example__wrappers {
   @media (max-width: $mobile-width-only) {
-    max-width: 280px;
   }
 
   @media (min-width: $tablet-width) {
-    max-width: 768px;
-    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1220px;
-    min-width: 1220px;
-    padding: 0;
+    position: absolute;
+    top: -114px;
   }
 }
 
-.example__wrappers {
+
+.example__wrapper {
+  @media (max-width: $mobile-width-only) {
+  }
+
+  @media (min-width: $tablet-width) {
+  }
+
   @media (min-width: $desktop-width) {
-    max-width: 1220px;
-    margin: 0 auto;
-    padding: 0 110px;
-    min-width: 1220px;
+    position: relative;
   }
 }
 

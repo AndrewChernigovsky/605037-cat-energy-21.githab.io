@@ -7,26 +7,15 @@
   flex-wrap: wrap;
 
   @media (max-width: $mobile-width-only) {
-    max-width: 280px;
-    margin: 0 auto;
-    margin-bottom: -2px;
   }
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     min-height: 60px;
-    padding-top: 22px;
-    margin: 0 auto;
-    max-width: 708px;
+    padding-top: 24px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 54px;
-    padding-bottom: 0;
-    min-width: 1220px;
-    max-width: 1220px;
   }
 }
 

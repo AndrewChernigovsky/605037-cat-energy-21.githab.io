@@ -43,14 +43,14 @@
     margin: 0;
     padding: 0;
     margin-bottom: 179px;
-    max-width: 366px;
+    min-width: 366px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 366px;
+    min-width: 366px;
     margin: 0;
     padding: 0;
-    margin-bottom: 54px;
+    margin-bottom: 58px;
   }
 }
 
