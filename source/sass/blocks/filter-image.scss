@@ -1,8 +1,15 @@
-.fiter-image {
-  height: auto;
+.filter-image {
+  padding-bottom: 22px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 
   &--closed {
     display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
   }
 
   &--opened {
@@ -10,9 +17,97 @@
   }
 }
 
-.fiter-image__pet {
-  padding-top: 16px;
-  object-fit: contain;
-  width: 100%;
-  height: min-content;
+.filter-image__pet-cat-before {
+  padding-top: 20px;
+  margin-bottom: 27px;
+  max-width: 100%;
+
+  @media (min-width: $tablet-width) {
+    object-fit: cover;
+    height: 502px;
+    width: 737px;
+    margin-bottom: 27px;
+    max-width: 100%;
+    position: absolute;
+    top: -5px;
+    left: 275px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 38px;
+  }
+}
+
+.filter-image__pet-cat-after {
+  padding-top: 20px;
+  margin-bottom: 27px;
+  max-width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 97px;
+    object-fit: cover;
+    height: 521px;
+    width: 575px;
+    margin-bottom: 27px;
+    max-width: 100%;
+    position: absolute;
+    padding-top: 48px;
+    left: -237px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -20px;
+    left: -232px;
+  }
+}
+
+.filter-image-before {
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    height: 289px;
+    width: 309px;
+    margin: 0 auto;
+    overflow: hidden;
+    right: 24px;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 504px;
+    width: 597px;
+    overflow: hidden;
+    right: 222px;
+    top: -93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 527px;
+    right: 191px;
+    top: -325px;
+  }
+}
+
+.filter-image-after {
+  @media (max-width: $mobile-width-only) {
+    position: relative;
+    height: 274px;
+    width: 320px;
+    overflow: hidden;
+    top: -317px;
+    left: -19px;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    height: 569px;
+    width: 46%;
+    overflow: hidden;
+    top: -671px;
+    left: 356px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -865px;
+    left: 406px;
+  }
 }
