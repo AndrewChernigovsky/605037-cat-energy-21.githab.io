@@ -3,13 +3,16 @@
     &::before {
       position: absolute;
       content: "";
-      background-image: url("../../img/content/section-cat-bg.png");
-      background-repeat: no-repeat;
       top: 0;
       right: 0;
-      width: 720px;
-      height: 694px;
       z-index: -1;
+      width: 50%;
+      height: 697px;
+      background-color: $green-spc;
+      background-image: url("../../img/content/index-background-desktop1x.jpg");
+      background-repeat: no-repeat;
+      background-size: auto 697px;
+      background-position-x: right;
     }
   }
 }

@@ -11,16 +11,9 @@
 
   @media (min-width: $desktop-width) {
     min-width: 100%;
-    background-color: $lgt_gray;
     min-height: 598px;
-    margin-bottom: 0;
-  }
-}
-
-.example__wrappers {
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    top: -114px;
+    margin-bottom: 135px;
+    background-image: linear-gradient(to bottom, $white  30%, #f2f2f2 30%);
   }
 }
 
@@ -70,6 +63,6 @@
 
   @media (min-width: $desktop-width) {
     max-width: 435px;
-    margin-bottom: 65px;
+    margin-bottom: 17px;
   }
 }
