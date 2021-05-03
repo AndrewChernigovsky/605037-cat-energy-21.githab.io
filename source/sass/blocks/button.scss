@@ -10,6 +10,11 @@
     position: absolute;
     top: 136px;
     min-width: 251px;
+
+    @media (min-width: $tablet-width) {
+      top: 431px;
+      min-width: 235px;
+    }
   }
 
   &--extra {
@@ -23,5 +28,9 @@
     justify-content: center;
     background-color: $lgt_gray;
     color: $gray;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 30px;
+    }
   }
 }
