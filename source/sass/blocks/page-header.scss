@@ -5,6 +5,7 @@
   justify-content: space-between;
   position: relative;
   flex-wrap: wrap;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     min-height: 60px;
@@ -14,6 +15,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 54px;
+    margin-bottom: 74px;
   }
 }
 

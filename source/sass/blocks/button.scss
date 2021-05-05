@@ -12,8 +12,14 @@
     min-width: 251px;
 
     @media (min-width: $tablet-width) {
-      top: 431px;
-      min-width: 235px;
+      top: 461px;
+      min-width: 218px;
+      left: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 463px;
+      min-width: 137px;
     }
   }
 
@@ -21,6 +27,18 @@
     position: absolute;
     top: 61px;
     min-width: 251px;
+
+    @media (min-width: $tablet-width) {
+      min-width: 603px;
+      top: 68px;
+      left: 37px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 10px;
+      left: 651px;
+      right: 0;
+    }
   }
 
   &--more {
@@ -28,9 +46,9 @@
     justify-content: center;
     background-color: $lgt_gray;
     color: $gray;
+  }
 
-    @media (min-width: $tablet-width) {
-      margin-bottom: 30px;
-    }
+  @media (min-width: $desktop-width) {
+    min-width: 140px;
   }
 }

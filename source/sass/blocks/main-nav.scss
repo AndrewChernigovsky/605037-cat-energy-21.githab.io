@@ -113,6 +113,17 @@
   }
 }
 
+.main-nav__link-desktop {
+  @media (min-width: $desktop-width) {
+    color: $black;
+
+    &--active {
+      color: $black;
+      border-bottom: 1px solid $green;
+    }
+  }
+}
+
 .main-nav--closed .main-nav__toggle {
   &::before {
     content: "";

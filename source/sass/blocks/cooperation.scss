@@ -1,4 +1,8 @@
 .cooperation {
+  @media (min-width: $tablet-width) {
+    background-color: $lgt_gray;
+  }
+
   @media (min-width: $desktop-width) {
     position: relative;
   }
@@ -54,11 +58,10 @@
     max-width: 280px;
     padding: 0;
     padding-top: 12px;
-    background-color: $white;
   }
 
   @media (min-width: $tablet-width) {
-    background-color: $white;
+    background-color: $lgt_gray;
     max-width: 626px;
     margin: 0 auto;
     padding-top: 26px;
@@ -73,5 +76,6 @@
     min-width: 404px;
     max-height: 71px;
     padding: 51px 91px 79px 75px;
+    background-color: $white;
   }
 }
