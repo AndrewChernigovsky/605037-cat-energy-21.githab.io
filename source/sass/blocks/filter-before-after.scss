@@ -1,19 +1,19 @@
-.filter-checkbox {
+.filter-before-after {
   color: $black;
+  position: absolute;
   margin: 0 auto;
-  position: relative;
 
   @media (max-width: $mobile-width-only) {
+    top: 273px;
     min-width: 280px;
   }
 
   @media (min-width: $tablet-width) {
-    top: 26px;
-    max-width: 315px;
+    top: 423px;
   }
 }
 
-.filter-checkbox__wrapper {
+.filter-before-after__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,7 +35,7 @@
   }
 }
 
-.filter-checkbox__text {
+.filter-before-after__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -53,24 +53,20 @@
   }
 }
 
-.filter-checkbox__label {
+.filter-before-after__label {
   display: inline-block;
-  min-width: 84px;
-  height: 14px;
-  padding-left: 45px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     min-width: 302px;
-    padding-left: 56px;
   }
 }
 
-.filter-checkbox__input {
+.filter-before-after__input {
   display: none;
 }
 
-.filter-checkbox__slider {
+.filter-before-after__slider {
   position: absolute;
   cursor: pointer;
   top: 24px;
@@ -124,8 +120,8 @@
       left: 206px;
       bottom: -15px;
       border-radius: 50%;
-      background-color: $green;
-      border: 11px solid $white;
+      background-color: #68b738;
+      border: 11px solid #ffffff;
       transition: 0.4s;
       box-shadow: 1px 0 5px $gray;
     }
@@ -136,15 +132,15 @@
   }
 }
 
-.filter-checkbox__input:checked + .filter-checkbox__slider {
+.filter-before-after__input:checked + .filter-before-after__slider {
   background-color: $white;
 }
 
-.filter-checkbox__input:focus + .filter-checkbox__slider {
+.filter-before-after__input:focus + .filter-before-after__slider {
   box-shadow: 0 0 1px $white;
 }
 
-.filter-checkbox__input:checked + .filter-checkbox__slider::before {
+.filter-before-after__input:checked + .filter-before-after__slider::before {
   transform: translateX(40px);
 
   @media (min-width: $tablet-width) {
@@ -152,7 +148,7 @@
   }
 }
 
-.filter-checkbox__input + .filter-checkbox__label::before {
+.filter-before-after__input + .filter-before-after__label::before {
   content: "";
   position: absolute;
   left: -2px;
@@ -160,26 +156,14 @@
   width: 30px;
   height: 30px;
   border: 2px solid $spcl_gray2;
-
-  @media (min-width: $tablet-width) {
-    left: -2px;
-    top: -2px;
-    width: 37px;
-    height: 37px;
-  }
 }
 
-.filter-checkbox__input:checked + .filter-checkbox__label::after {
+.filter-before-after__input:checked + .filter-before-after__label::after {
   content: "";
   position: absolute;
   background-image: url("../../img/icons/icon-checkbox.svg");
   left: 6px;
-  top: 11px;
+  top: 12px;
   width: 18px;
   height: 14px;
-
-  @media (min-width: $tablet-width) {
-    left: 11px;
-    top: 14px;
-  }
 }

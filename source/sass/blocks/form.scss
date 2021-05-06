@@ -1,8 +1,45 @@
 .form__fieldset {
   border: none;
-  padding: 0;
-  margin: 0;
   position: relative;
+  padding: 0;
+
+  &:first-child {
+    border-bottom: 1px solid $lgt_gray;
+    padding-bottom: 14px;
+    margin-bottom: 28px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 34px;
+    }
+  }
+
+  &:nth-child(2) {
+    border-bottom: 1px solid $lgt_gray;
+    padding-bottom: -4px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 42px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form__fieldset-wrapper {
+  min-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:nth-child(3) {
+      min-width: 1220px;
+    }
+  }
 }
 
 .form__label {
@@ -16,6 +53,14 @@
 
   &::placeholder {
     text-transform: uppercase;
+  }
+}
+
+.form__email-label-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -34,13 +79,63 @@
     line-height: 18px;
     text-transform: uppercase;
     padding-left: 10px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }
 
-.form__list {
+.form__list-radio {
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    min-width: 630px;
+    line-height: 32px;
+    border: 1px solid $lgt_gray;
+    padding-top: 30px;
+    padding-bottom: 11px;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 516px;
+  }
+}
+
+.form__list-checkbox {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    min-width: 630px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 33px;
+    max-width: 630px;
+    margin-bottom: 49px;
+  }
+}
+
+.form__text {
+  @media (min-width: $tablet-width) {
+    padding-left: 69px;
+  }
+}
+
+.form__textarea {
+  min-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 22px;
+    margin-bottom: 37px;
+    min-width: 630px;
+    padding-bottom: 41px;
+  }
 }
 
 .form__textarea::placeholder {
@@ -49,6 +144,13 @@
   padding-top: 15px;
   font-size: 16px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 5px;
+    padding-left: 15px;
+  }
 }
 
 .form__character {
@@ -58,6 +160,10 @@
   flex-wrap: wrap;
   line-height: 10px;
   margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 23px;
+  }
 }
 
 .form__info {
@@ -67,23 +173,34 @@
   flex-wrap: wrap;
   line-height: 22px;
   margin-bottom: 8px;
+
+  @media (min-width: $desktop-width) {
+    min-width: 570px;
+    padding: 0;
+  }
 }
 
 .form__email {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  line-height: 57px;
+  line-height: 13px;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 99px;
-    height: 2px;
-    top: 36px;
-    right: -19px;
-    background-color: $green;
+  @media (min-width: $tablet-width) {
+    line-height: 22px;
+    margin-bottom: 37px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 570px;
+    padding: 0;
+  }
+}
+
+.form_info-email-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .form__comment {
@@ -93,14 +210,8 @@
   flex-wrap: wrap;
   margin-bottom: 48px;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 157px;
-    height: 2px;
-    top: 33px;
-    right: -20px;
-    background-color: $green;
+  @media (min-width: $tablet-width) {
+    margin-bottom: -11px;
   }
 }
 
@@ -111,14 +222,8 @@
   flex-wrap: wrap;
   line-height: 42px;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 137px;
-    height: 2px;
-    top: 33px;
-    right: -20px;
-    background-color: $green;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
   }
 }
 
@@ -128,28 +233,79 @@
   line-height: 26px;
   margin-bottom: 30px;
   position: relative;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .form__title-wrapper {
   display: flex;
 }
 
-.form__line {
-  background-color: $green;
-  flex-grow: 1;
-  height: 2px;
-  width: 2px;
-}
-
 .form__icon-email {
   background-image: url("../../img/icons/email-icon.svg");
   background-repeat: no-repeat;
   background-position: 190px center;
-}
 
+  @media (min-width: $tablet-width) {
+    background-position: 98% center;
+  }
+}
 
 .form__icon-phone {
   background-image: url("../../img/icons/phone-icon.svg");
   background-repeat: no-repeat;
   background-position: 170px center;
+
+  @media (min-width: $tablet-width) {
+    background-position: 98% center;
+  }
+}
+
+.form__email::after,
+.form__comment::after,
+.form__filter::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 36px;
+  right: -19px;
+  left: 0;
+  z-index: -1;
+  background-color: $green;
+
+  @media (min-width: $tablet-width) {
+    top: 52px;
+  }
+}
+
+.form__title-contact {
+  max-width: 68%;
+
+  @media (min-width: $tablet-width) {
+    max-width: 85%;
+    margin-bottom: 78px;
+  }
+}
+
+.form__title-comment {
+  max-width: 45%;
+
+  @media (min-width: $tablet-width) {
+    max-width: 35%;
+    margin-bottom: 76px;
+  }
+}
+
+.form__title-more {
+  max-width: 53%;
+
+  @media (min-width: $tablet-width) {
+    max-width: 40%;
+    margin-bottom: 30px;
+  }
 }

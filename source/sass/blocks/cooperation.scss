@@ -47,7 +47,6 @@
 }
 
 .cooperation__adress {
-  background-color: $lgt_gray;
   display: flex;
   padding: 12px 25px 8px 20px;
   flex-wrap: wrap;
@@ -61,10 +60,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    background-color: $lgt_gray;
     max-width: 626px;
     margin: 0 auto;
-    padding-top: 26px;
+    padding-top: 48px;
     padding-bottom: 45px;
   }
 
@@ -72,7 +70,7 @@
     position: absolute;
     z-index: 4;
     top: 92px;
-    left: 110px;
+    left: 50px;
     min-width: 404px;
     max-height: 71px;
     padding: 51px 91px 79px 75px;
