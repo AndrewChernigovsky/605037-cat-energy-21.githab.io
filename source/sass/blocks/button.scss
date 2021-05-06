@@ -15,6 +15,13 @@
       font-size: 20px;
       line-height: 0;
     }
+
+    @media (min-width: $desktop-width) {
+      min-width: 568px;
+      margin-left: 1px;
+      margin-top: 33px;
+      padding: 27px 0;
+    }
   }
 
   &--product {
@@ -57,9 +64,5 @@
     justify-content: center;
     background-color: $lgt_gray;
     color: $gray;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-width: 140px;
   }
 }
