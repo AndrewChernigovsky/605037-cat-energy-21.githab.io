@@ -13,6 +13,13 @@
   height: 30px;
   border: 2px solid $spcl_gray2;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    left: 29px;
+    top: -4px;
+    width: 37px;
+    height: 37px;
+  }
 }
 
 .filter-radio__input:checked + .filter-radio__label::after {
@@ -24,6 +31,13 @@
   height: 14px;
   background-color: $green;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    left: 41px;
+    top: 6px;
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .filter-radio__label {
@@ -32,4 +46,10 @@
   font-weight: 400;
   text-transform: uppercase;
   padding-left: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 68px;
+  }
 }

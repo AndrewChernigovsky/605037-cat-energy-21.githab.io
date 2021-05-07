@@ -69,6 +69,7 @@
   position: relative;
   display: block;
   font-size: 18px;
+  font-weight: 400;
   line-height: 24px;
   color: $black;
   text-align: center;
@@ -89,8 +90,8 @@
     }
 
     @media (min-width: $tablet-width) {
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 8px;
+      padding-bottom: 8px;
       border-bottom: 1px solid $green;
     }
   }
@@ -108,6 +109,17 @@
 
     &--active {
       border-bottom: 1px solid $white;
+    }
+  }
+}
+
+.main-nav__link-desktop {
+  @media (min-width: $desktop-width) {
+    color: $black;
+
+    &--active {
+      color: $black;
+      border-bottom: 1px solid $green;
     }
   }
 }

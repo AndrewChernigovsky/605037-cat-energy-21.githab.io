@@ -12,126 +12,157 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header container">
-    <a class="page-header__logo"><img class="page-header__image" src="img/logo/logotype.png" width="191" height="38"
-        alt="logotype"></a>
-    <nav class="main-nav main-nav--closed main-nav-nojs">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link" href="index.html">главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">католог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link">подбор программы</a>
-          </li>
-        </ul>
-      </div>
+  <header class="page-header">
+    <div class="page-header__wrapper container">
+      <a class="page-header__logo-mobile"><img class="page-header__logo-mobile" src="img/logo/logo-mobile.svg"
+          width="191" height="38" alt="logotype"></a>
+      <a class="page-header__logo-tablet"><img class="page-header__logo-tablet" src="img/logo/logo-tablet.svg"
+          width="174" height="52" alt="logotype"></a>
+      <a class="page-header__logo-desktop"><img class="page-header__logo-desktop" src="img/logo/logo-desktop.svg"
+          width="202" height="59" alt="logotype"></a>
+      <nav class="main-nav main-nav--closed main-nav-nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link-desktop" href="index.html">главная</a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link main-nav__link-desktop--active main-nav__link--active">католог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link-desktop" href="form.html">подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
-    </nav>
   </header>
   <main class="page-main">
-    <section class="form-pets container">
+    <section class="form-pets">
       <div class="form-pets__wrapper">
-        <h1 class="form-pets__title">Подбор программы</h1>
-        <h2 class="form-pets__subtitle">Заполните анкету, и мы подберем<br>программу питания для вашего кота</h2>
+        <div class="form__text container">
+          <h1 class="form-pets__title">Подбор программы</h1>
+          <h2 class="form-pets__subtitle">Заполните анкету, и мы подберем<br>программу питания для вашего кота</h2>
+        </div>
         <form class="form" method="POST" action="https://echo.htmlacademy.ru">
-          <fieldset class="form__fieldset form__character">
-            <label class="form__label">
-              Имя:* <input class="form__input" type="text" name="name" aria-label="Введите имя питомца"  placeholder="Барсик">
-            </label><br>
-            <label class="form__label">
-              Вес (кг):* <input class="form__input" type="text" name="weight" aria-label="Введите вес питомца"  placeholder="7">
-            </label><br>
-            <label class="form__label">
-              Возраст (лет):* <input class="form__input" type="text" name="age" aria-label="Введите возраст питомца"  placeholder="7">
-            </label><br>
-          </fieldset>
-          <fieldset class="form__fieldset form__info">
-            <ul class="form__list">
-              <li class="form__item filter-option filter-radio">
-                <input class="visually-hidden filter-radio__input filter-input" type="radio" name="programma" value="slim"
-                  id="filter-slim" checked>
-                <label class="filter-radio__label" for="filter-slim">Похудение</label>
-              </li>
-              <li class="form__item filter-option filter-radio">
-                <input class="visually-hidden filter-radio__input filter-input" type="radio" name="programma" value="slim"
-                  id="filter-fat">
-                <label class="filter-radio__label" for="filter-fat">Набор Массы</label>
-              </li>
-              <li class="form__item filter-option filter-radio">
-                <input class="visually-hidden filter-radio__input filter-input" type="radio" name="programma" value="slim"
-                  id="filter-advice">
-                <label class="filter-radio__label" for="filter-advice">Не знаю (нужен ваш совет)</label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="form_info-email-wrapper container">
+            <fieldset class="form__fieldset form__character">
+              <div class="form__character-wrapper">
+                <label class="form__label">
+                  Имя:* <input class="form__input" type="text" name="name" aria-label="Введите имя питомца"
+                    placeholder="Барсик">
+                </label><br>
+                <label class="form__label">
+                  Вес (кг):* <input class="form__input" type="text" name="weight" aria-label="Введите вес питомца"
+                    placeholder="7">
+                </label><br>
+                <label class="form__label">
+                  Возраст (лет):* <input class="form__input" type="text" name="age" aria-label="Введите возраст питомца"
+                    placeholder="7">
+                </label><br>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset form__info">
+              <div class="form__info-wrapper">
+                <ul class="form__list-radio">
+                  <li class="form__item-radio filter-option filter-radio">
+                    <input class="visually-hidden filter-radio__input filter-input" type="radio" name="programma"
+                      value="slim" id="filter-slim" checked>
+                    <label class="filter-radio__label" for="filter-slim">Похудение</label>
+                  </li>
+                  <li class="form__item-radio filter-option filter-radio">
+                    <input class="visually-hidden filter-radio__input filter-input" type="radio" name="programma"
+                      value="slim" id="filter-fat">
+                    <label class="filter-radio__label" for="filter-fat">Набор Массы</label>
+                  </li>
+                  <li class="form__item-radio filter-option filter-radio">
+                    <input class="visually-hidden filter-radio__input filter-input" type="radio" name="programma"
+                      value="slim" id="filter-advice">
+                    <label class="filter-radio__label" for="filter-advice">Не знаю (нужен ваш совет)</label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+          </div>
+
           <fieldset class="form__fieldset form__email">
-            <div class="form__title-wrapper">
-              <h2 class="form__title">Контактные данные (владельца кота)</h2>
-              <span class="form__line"></span>
+            <div class="form__email-wrapper container">
+              <div class="form__title-wrapper">
+                <h2 class="form__title form__title-contact">Контактные данные (владельца кота)</h2>
+              </div>
+
+              <div class="form__email-label-wrapper">
+                <label class="form__label">
+                  Email:* <input class="form__input form__icon-email" id="email-user" type="email" name="email"
+                    aria-label="Введите емаил" placeholder="example@gmail.com">
+                </label><br>
+                <label class="form__label">
+                  Телефон:* <input class="form__input form__icon-phone" id="telephone-user" type="tel"
+                    name="telephone-number" aria-label="Введите вес питомца" placeholder="8 (960) 900-60-90">
+                </label>
+              </div>
             </div>
-            <label class="form__label">
-              Email:* <input class="form__input form__icon-email" id="email-user" type="email" name="email"
-                aria-label="Введите емаил" placeholder="example@gmail.com">
-            </label><br>
-            <label class="form__label">
-              Телефон:* <input class="form__input form__icon-phone" id="telephone-user" type="tel"
-                name="telephone-number" aria-label="Введите вес питомца" placeholder="8 (960) 900-60-90">
-            </label>
+
           </fieldset>
+
           <fieldset class="form__fieldset form__comment">
-            <h2 class="form__title">Комментарий</h2>
-            <textarea class="form__textarea" name="comment" id="comment-field"
-              placeholder="Расскажите обо всех повадках кота" rows="6" wrap="hard"></textarea>
+            <div class="form__comment-wrapper container">
+              <h2 class="form__title form__title-comment">Комментарий</h2>
+              <textarea class="form__textarea" name="comment" id="comment-field"
+                placeholder="Расскажите обо всех повадках кота" rows="6" wrap="hard"></textarea>
+            </div>
           </fieldset>
+
           <fieldset class="form__fieldset form__filter">
-            <h2 class="form__title">Дополнительно</h2>
-            <ul class="form__list">
-              <li class="form__item filter-option filter-checkbox">
-                <input class="filter-checkbox__input filter-input" type="checkbox" name="sugar"
-                  id="filter-sugar" checked>
-                <label class="filter-checkbox__label" for="filter-sugar">сахарозаменитель</label>
-              </li>
-              <li class="form__item filter-option filter-checkbox">
-                <input class="filter-checkbox__input filter-input" type="checkbox" name="water"
-                  id="filter-water">
-                <label class="filter-checkbox__label" for="filter-water">питьевая вода</label>
-              </li>
-              <li class="form__item filter-option filter-checkbox">
-                <input class="filter-checkbox__input filter-input" type="checkbox" name="milk"
-                  id="filter-milk" checked>
-                <label class="filter-checkbox__label" for="filter-milk">молоко</label>
-              </li>
-              <li class="form__item filter-option filter-checkbox">
-                <input class="filter-checkbox__input filter-input" type="checkbox" name="vitamins"
-                  id="filter-vitamins">
-                <label class="filter-checkbox__label" for="filter-vitamins">витамины</label>
-              </li>
-            </ul>
-            <button class="button link button--push" type="submit">отправить заявку</button>
+            <div class="form__filter-wrapper container">
+              <h2 class="form__title form__title-more">Дополнительно</h2>
+              <ul class="form__list-checkbox">
+                <li class="form__item filter-option filter-checkbox">
+                  <input class="filter-checkbox__input filter-input" type="checkbox" name="sugar" id="filter-sugar"
+                    checked>
+                  <label class="filter-checkbox__label" for="filter-sugar">сахарозаменитель</label>
+                </li>
+                <li class="form__item filter-option filter-checkbox">
+                  <input class="filter-checkbox__input filter-input" type="checkbox" name="water" id="filter-water">
+                  <label class="filter-checkbox__label" for="filter-water">питьевая вода</label>
+                </li>
+                <li class="form__item filter-option filter-checkbox">
+                  <input class="filter-checkbox__input filter-input" type="checkbox" name="milk" id="filter-milk"
+                    checked>
+                  <label class="filter-checkbox__label" for="filter-milk">молоко</label>
+                </li>
+                <li class="form__item filter-option filter-checkbox">
+                  <input class="filter-checkbox__input filter-input" type="checkbox" name="vitamins"
+                    id="filter-vitamins">
+                  <label class="filter-checkbox__label" for="filter-vitamins">витамины</label>
+                </li>
+              </ul>
+              <button class="button link button--push" type="submit">отправить заявку</button>
+            </div>
           </fieldset>
         </form>
-        <p class="form-pets__mark">* — Обязательные поля</p>
+        <p class="form-pets__mark container">* — Обязательные поля</p>
       </div>
     </section>
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <section class="cooperation">
-        <div class="cooperation__wrapper">
+    <section class="cooperation">
+      <div class="cooperation__wrapper container">
+        <div class="cooperation__adress">
           <h2 class="cooperation__title">приглашаем<br>к сотрудничеству<br>дилеров!</h2>
-          <p class="cooperation__subtitle">ул. Большая<br> Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+          <p class="cooperation__subtitle">ул. Большая<br> Конюшенная, д. 19/8<br><span
+              class="cooperation__subtitle-city">Санкт-Петербург</span></p>
         </div>
-        <div class="map" id="map"></div>
-      </section>
-      <div class="social container">
+      </div>
+      <div class="map" id="map"></div>
+    </section>
+    <div class="social">
+      <div class="social__wrapper container">
         <a class="social__link social__link--logo"><img class="social__logo" src="img/logo/logotype-text.png"
             width="101" height="18" alt="logotype"></a>
         <div class="social__icons">
@@ -175,8 +206,8 @@
           </a>
         </div>
       </div>
+    </div>
   </footer>
-
   <script src="js/menu.js"></script>
   <script src="js/map.js"></script>
   <script
