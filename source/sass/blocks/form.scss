@@ -110,6 +110,12 @@
   text-align: left;
   border: 1px solid $lgt_form_gray;
 
+  &:focus,
+  &:active {
+    border: 2px solid $black;
+    outline: none;
+  }
+
   &::placeholder {
     font-weight: 400;
     font-size: 14px;
@@ -123,6 +129,7 @@
     }
   }
 }
+
 
 .form__list-radio {
   padding: 0;
@@ -171,6 +178,12 @@
 
 .form__textarea {
   min-width: 280px;
+
+  &:focus,
+  &:active {
+    border: 2px solid $black;
+    outline: none;
+  }
 
   @media (min-width: $tablet-width) {
     line-height: 22px;
@@ -357,5 +370,6 @@
   @media (min-width: $tablet-width) {
     max-width: 40%;
     margin-bottom: 30px;
+    margin-top: 30px;
   }
 }

@@ -11,6 +11,10 @@
 .cooperation__wrapper {
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    margin-top: -20px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-top: -135px;
   }
@@ -43,6 +47,14 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
+  }
+}
+
+.cooperation__subtitle-city {
+  line-height: 0;
+
+  @media (min-width: $tablet-width) {
+    line-height: 66px;
   }
 }
 
