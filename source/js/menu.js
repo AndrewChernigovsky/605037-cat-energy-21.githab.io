@@ -3,6 +3,8 @@ const burgerOpened = document.querySelector(".main-nav--opened");
 const burgerButton = document.querySelector(".main-nav__toggle");
 const menuBurger = document.querySelector(".main-nav");
 
+menuBurger.classList.remove('main-nav--nojs');
+
 burgerButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   console.log("Кнопка нажата");

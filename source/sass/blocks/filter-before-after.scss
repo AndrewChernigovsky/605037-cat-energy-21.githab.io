@@ -4,7 +4,7 @@
   margin: 0 auto;
 
   @media (max-width: $mobile-width-only) {
-    top: 273px;
+    top: 287px;
     min-width: 280px;
   }
 
@@ -40,16 +40,33 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: 1px solid $gray;
+  }
+
+  &:active {
+    border-bottom: none;
+  }
 
   @media (max-width: $mobile-width-only) {
     padding-top: 3px;
     padding-left: 5px;
+    border-bottom: 1px solid $spcl_gray4;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     padding-bottom: 5px;
-    border-bottom: 1px solid gray;
+    margin-top: 15px;
+    background-color: white;
+    border-bottom: 1px solid $spcl_gray4;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $lgt_gray;
   }
 }
 
@@ -78,10 +95,11 @@
   transition: 0.4s;
 
   @media (max-width: $mobile-width-only) {
-    top: 22px;
+    top: 8px;
     left: 99px;
     right: 96px;
     bottom: 21px;
+    height: 10px;
   }
 
 
@@ -120,16 +138,24 @@
       left: 206px;
       bottom: -15px;
       border-radius: 50%;
-      background-color: #68b738;
-      border: 11px solid #ffffff;
+      background-color: $green;
+      border: 11px solid $white;
       transition: 0.4s;
-      box-shadow: 1px 0 5px $gray;
+      box-shadow: 0 0 0 1px $spcl_gray2;
     }
 
     @media (min-width: $desktop-width) {
       left: 199px;
     }
   }
+}
+
+.filter-before-after__slider:hover::before {
+  box-shadow: 0 1px 2px $gray;
+}
+
+.filter-before-after__slider:active::before {
+  box-shadow: 0 0 0 1px $green;
 }
 
 .filter-before-after__input:checked + .filter-before-after__slider {
