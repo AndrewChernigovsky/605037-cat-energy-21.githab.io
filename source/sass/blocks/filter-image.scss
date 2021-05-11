@@ -65,11 +65,12 @@
   position: relative;
 
   @media (max-width: $mobile-width-only) {
-    height: 289px;
-    width: 309px;
+    height: 280px;
+    width: 311px;
     margin: 0 auto;
     overflow: hidden;
-    right: 24px;
+    right: 20px;
+    top: 6px;
   }
 
   @media (min-width: $tablet-width) {

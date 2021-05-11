@@ -44,16 +44,22 @@
 }
 
 .developed__link:hover .developed__logo {
-  stroke: $green;
+  path {
+    fill: $green;
+  }
 }
 
 .developed__logo {
   &:hover {
-    stroke: $green;
+    path {
+      fill: $green;
+    }
   }
 
   &:active {
-    stroke: $green;
-    opacity: 0.3;
+    path {
+      fill: $green;
+      opacity: 0.3;
+    }
   }
 }

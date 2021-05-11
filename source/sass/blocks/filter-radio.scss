@@ -9,9 +9,9 @@
   position: absolute;
   left: 0;
   top: -8px;
-  width: 30px;
-  height: 30px;
-  border: 2px solid $spcl_gray2;
+  width: 37px;
+  height: 37px;
+  border: 1px solid $spcl_gray2;
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
@@ -20,6 +20,20 @@
     width: 37px;
     height: 37px;
   }
+}
+
+.filter-radio__input:focus + label::after,
+.filter-radio__input:focus + label::before,
+.filter-radio__input:hover + label::after,
+.filter-radio__input:hover + label::before {
+  content: "";
+  position: absolute;
+  left: 29px;
+  top: -4px;
+  width: 37px;
+  height: 37px;
+  border: 1px solid $spcl_gray5;
+  border-radius: 50%;
 }
 
 .filter-radio__input:checked + .filter-radio__label::after {
@@ -33,7 +47,34 @@
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
-    left: 41px;
+    left: 40px;
+    top: 6px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.filter-radio__input:disabled + label::after,
+.filter-radio__input:disabled + label::before {
+  opacity: 0.4;
+}
+
+.filter-radio__input:disabled + label {
+  opacity: 0.4;
+}
+
+.filter-radio__input:disabled + label::before {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 2px;
+  width: 14px;
+  height: 14px;
+  background-color: $green;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    left: 40px;
     top: 6px;
     width: 18px;
     height: 18px;
