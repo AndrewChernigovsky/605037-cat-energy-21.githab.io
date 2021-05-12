@@ -14,12 +14,13 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper container">
-      <a class="page-header__logo-mobile"><img class="page-header__logo-mobile" src="img/logo/logo-mobile.svg"
-          width="191" height="38" alt="logotype"></a>
-      <a class="page-header__logo-tablet"><img class="page-header__logo-tablet" src="img/logo/logo-tablet.svg"
-          width="174" height="52" alt="logotype"></a>
-      <a class="page-header__logo-desktop"><img class="page-header__logo-desktop" src="img/logo/logo-desktop.svg"
-          width="202" height="59" alt="logotype"></a>
+      <a class="page-header__logo-link">
+        <picture>
+        <source media="(min-width: 1220px)" srcset="img/logo/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+        <img src="img/logo/logo-mobile.svg" width="191" height="38" alt="logotype">
+        </picture>
+      </a>
       <nav class="main-nav main-nav--closed main-nav-nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
