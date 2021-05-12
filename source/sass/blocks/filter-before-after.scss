@@ -40,7 +40,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  border: none;
+  border: transparent;
   cursor: pointer;
 
   &:hover {
@@ -48,7 +48,7 @@
   }
 
   &:active {
-    border-bottom: none;
+    border: none;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -58,15 +58,19 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-top: 5px;
+    padding-left: 5px;
     font-size: 20px;
     padding-bottom: 5px;
     margin-top: 15px;
-    background-color: white;
+    background-color: $white;
+    border-top: 1px solid $white;
     border-bottom: 1px solid $spcl_gray4;
   }
 
   @media (min-width: $desktop-width) {
     background-color: $lgt_gray;
+    border-top: 1px solid $lgt_gray;
   }
 }
 
