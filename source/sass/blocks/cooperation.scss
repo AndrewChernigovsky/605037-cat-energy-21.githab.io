@@ -1,10 +1,13 @@
 .cooperation {
+  background-color: $lgt_gray;
+
   @media (min-width: $tablet-width) {
     background-color: $lgt_gray;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
+    background-color: $white;
   }
 }
 

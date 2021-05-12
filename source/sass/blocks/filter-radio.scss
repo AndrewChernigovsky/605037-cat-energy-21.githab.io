@@ -67,6 +67,16 @@
     width: 30px;
     height: 30px;
   }
+
+  @media (min-width: $tablet-width) {
+    left: 30px;
+    top: -4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 28px;
+    top: 11px;
+  }
 }
 
 .filter-radio__input:checked + .filter-radio__label::after {
