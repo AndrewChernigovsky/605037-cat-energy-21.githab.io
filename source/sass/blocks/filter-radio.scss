@@ -2,6 +2,20 @@
   position: relative;
   padding-left: 22px;
   padding-bottom: 20px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 20px;
+    padding-top: 12px;
+    margin-bottom: 9px;
+  }
 }
 
 .filter-radio__input + .filter-radio__label::before {
@@ -14,11 +28,23 @@
   border: 1px solid $spcl_gray2;
   border-radius: 50%;
 
+  @media (max-width: $mobile-width-only) {
+    left: 0;
+    top: -5px;
+    width: 28px;
+    height: 28px;
+  }
+
   @media (min-width: $tablet-width) {
     left: 29px;
     top: -4px;
     width: 37px;
     height: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 28px;
+    top: 10px;
   }
 }
 
@@ -34,6 +60,23 @@
   height: 37px;
   border: 1px solid $spcl_gray5;
   border-radius: 50%;
+
+  @media (max-width: $mobile-width-only) {
+    left: -1px;
+    top: -5px;
+    width: 30px;
+    height: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 30px;
+    top: -4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 28px;
+    top: 11px;
+  }
 }
 
 .filter-radio__input:checked + .filter-radio__label::after {
@@ -46,11 +89,20 @@
   background-color: $green;
   border-radius: 50%;
 
+  @media (max-width: $mobile-width-only) {
+    left: 7px;
+  }
+
   @media (min-width: $tablet-width) {
     left: 40px;
     top: 6px;
     width: 18px;
     height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 38px;
+    top: 20px;
   }
 }
 
@@ -86,7 +138,7 @@
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  padding-left: 25px;
+  padding-left: 23px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

@@ -6,6 +6,10 @@
   position: relative;
   flex-wrap: wrap;
 
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $lgt_gray;
+  }
+
   @media (min-width: $tablet-width) {
     min-height: 60px;
     padding-top: 24px;
@@ -14,7 +18,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 54px;
-    margin-bottom: 109px;
+    margin-bottom: 74px;
   }
 }
 

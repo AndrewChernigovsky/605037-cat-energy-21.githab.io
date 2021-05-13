@@ -118,7 +118,7 @@
   }
 }
 
-.social__icon {
+.social__link:hover .social__icon {
   &:hover {
     path {
       fill: $green;
