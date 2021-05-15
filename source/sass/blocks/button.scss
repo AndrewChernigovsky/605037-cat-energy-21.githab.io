@@ -34,7 +34,7 @@
 
   &--product {
     position: absolute;
-    top: 136px;
+    top: 137px;
     min-width: 251px;
 
     @media (min-width: $tablet-width) {
@@ -44,7 +44,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: 463px;
+      top: 467px;
       min-width: 137px;
     }
   }
@@ -61,16 +61,11 @@
     }
 
     @media (min-width: $desktop-width) {
+      min-width: 13%;
+      max-width: 212px;
       top: 10px;
       left: 651px;
       right: 0;
     }
-  }
-
-  &--more {
-    display: flex;
-    justify-content: center;
-    background-color: $lgt_gray;
-    color: $gray;
   }
 }

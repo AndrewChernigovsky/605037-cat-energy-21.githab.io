@@ -26,6 +26,11 @@
   height: 38px;
   border: 1px solid black;
   opacity: 1;
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+    top: 0;
+  }
 }
 
 .filter-checkbox__input + label::before {
