@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="icon" href="img/icons/icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,12 +14,13 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper container">
-      <a class="page-header__logo-mobile"><img class="page-header__logo-mobile" src="img/logo/logo-mobile.svg"
-          width="191" height="38" alt="logotype"></a>
-      <a class="page-header__logo-tablet"><img class="page-header__logo-tablet" src="img/logo/logo-tablet.svg"
-          width="174" height="52" alt="logotype"></a>
-      <a class="page-header__logo-desktop"><img class="page-header__logo-desktop" src="img/logo/logo-desktop.svg"
-          width="202" height="59" alt="logotype"></a>
+      <a class="page-header__logo-link">
+        <picture>
+          <source media="(min-width: 1220px)" srcset="img/logo/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+          <img src="img/logo/logo-mobile.svg" width="191" height="38" alt="logotype">
+        </picture>
+      </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -27,13 +28,13 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link main-nav__link--active">главная</a>
+              <a class="main-nav__link main-nav__link--active main-nav__link-desktop main-nav__link--desktop-active">главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">католог продукции</a>
+              <a class="main-nav__link main-nav__link-desktop" href="catalog.html">католог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">подбор программы</a>
+              <a class="main-nav__link main-nav__link-desktop" href="form.html">подбор программы</a>
             </li>
           </ul>
         </div>
@@ -49,9 +50,11 @@
           <h1 class="offer__title">Функциональное питание для котов</h1>
           <h2 class="offer__subtitle">Занялся собой? Займись котом!</h2>
           <a class="offer__link link offer--link-position" href="blank.html">подобрать программу</a>
-          <img class="offer__product-mobile" src="img/content/index-can-mobile.png" width="259" height="265" alt="Cat Energy Pro 500 граммов">
-          <img class="offer__product-tablet"  src="img/content/tablet-can-mobile.png" width="665" height="600" alt="Cat Energy Pro 500 граммов">
-          <img class="offer__product-desktop" src="img/content/desktop-can-image.png" width="515" height="500" alt="Cat Energy Pro 500 граммов">
+          <picture>
+            <source media="(min-width: 1220px)" srcset="img/content/desktop-can-image.png">
+            <source media="(min-width: 768px)" srcset="img/content/tablet-can-mobile.png">
+            <img class="offer__product-mobile" src="img/content/index-can-mobile.png" width="259" height="265" alt="Cat Energy Pro 500 граммов">
+          </picture>
         </div>
       </div>
     </section>
@@ -131,12 +134,18 @@
         <div class="filter-pets">
           <div class="filter-pets__wrapper">
             <div class="filter-image filter-image-before">
-              <img class="filter-image__pet-cat-before filter-image--opened" src="img/content/cat-before.png"
-                width="677" height="520" alt="Кот, который хочет похудеть">
+              <picture>
+                <source media="(min-width: 1220px)" srcset="img/content/cat-before@1x.png 1x, img/content/cat-before@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/content/cat-before@1x.png 1x, img/content/cat-before@2x.png 2x">
+                <img class="filter-image__pet-cat-before filter-image--opened" src="img/content/cat-before@1x.png"  srcset="img/content/cat-before@1x.png 1x, img/content/cat-before@2x.png 2x" sizes="(min-width: 320px) 50vw : 100vw" width="311" height="280" alt="Кот, который хочет похудеть">
+              </picture>
             </div>
             <div class="filter-image filter-image-after">
-              <img class="filter-image__pet-cat-after filter-image--closed" src="img/content/cat-after.png" width="545"
-                height="520" alt="Кот, который хочет потолстеть">
+              <picture>
+                <source media="(min-width: 1220px)" srcset="img/content/сat-after@1x.png 1x, img/content/cat-after@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/content/cat-after@1x.png 1x, img/content/cat-after@2x.png 2x">
+                <img class="filter-image__pet-cat-after filter-image--closed" src="img/content/cat-after@1x.png"  srcset="img/content/cat-after@1x.png 1x, img/content/cat-after@2x.png 2x" sizes="(min-width: 320px) 50vw : 100vw" width="545" height="520" alt="Кот, который хочет похудеть">
+              </picture>
             </div>
             <div class="filter-before-after">
               <div class="filter-before-after__wrapper">

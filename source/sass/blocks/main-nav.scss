@@ -115,9 +115,12 @@
     line-height: 30px;
     padding-top: 6px;
     padding-bottom: 6px;
-    color: $white;
 
     &--active {
+      border-bottom: 1px solid $green;
+    }
+
+    &--desktop-active {
       border-bottom: 1px solid $white;
     }
   }
@@ -125,12 +128,7 @@
 
 .main-nav__link-desktop {
   @media (min-width: $desktop-width) {
-    color: $black;
-
-    &--active {
-      color: $black;
-      border-bottom: 1px solid $green;
-    }
+    color: $white;
   }
 }
 

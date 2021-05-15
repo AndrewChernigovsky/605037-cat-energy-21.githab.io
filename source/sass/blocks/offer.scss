@@ -25,7 +25,7 @@
       width: 50%;
       height: 697px;
       background-color: $green-spc;
-      background-image: url("../../img/content/index-background-desktop1x.jpg");
+      background-image: url("../../img/content/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
       background-size: auto 697px;
       background-position-x: right;
@@ -37,9 +37,10 @@
   @media (max-width: $mobile-width-only) {
     height: 302px;
     margin: 0 auto;
-    background-image: url("../../img/content/catbg-main.jpg");
+    background-image: url("../../img/content/catbg-main@1x.jpg");
     background-repeat: no-repeat;
     background-position: calc((100% - 40px) / 2) 0;
+    background-size: 563px auto;
     z-index: 0;
     margin-bottom: 200px;
     margin-top: 0;
@@ -55,6 +56,37 @@
     position: relative;
     padding-left: 190px;
     margin-bottom: 266px;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .offer {
+    @media (min-width: $desktop-width) {
+      &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        z-index: -1;
+        width: 50%;
+        height: 697px;
+        background-color: $green-spc;
+        background-image: url("../../img/content/index-background-desktop@2x.jpg");
+        background-repeat: no-repeat;
+        background-size: auto 697px;
+        background-position-x: right;
+      }
+    }
+
+    .offer__wrapper {
+      background-image: url("../../img/content/catbg-main@2x.jpg");
+    }
+
+    @media (min-width: $tablet-width) {
+      .offer__wrapper {
+        background-image: none;
+      }
+    }
   }
 }
 
@@ -179,9 +211,10 @@
 }
 
 .offer__product-mobile {
+  display: block;
+  position: absolute;
+
   @media (max-width: $mobile-width-only) {
-    display: block;
-    position: absolute;
     top: 171px;
     left: 20px;
     width: 280px;
@@ -189,22 +222,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.offer__product-tablet {
-  @media (max-width: $mobile-width-only) {
-    display: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    position: absolute;
     top: 198px;
     left: 30px;
     width: 707px;
@@ -213,22 +230,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.offer__product-desktop {
-  @media (max-width: $mobile-width-only) {
-    display: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: block;
-    position: absolute;
     top: -82px;
     left: 368px;
     width: 552px;
