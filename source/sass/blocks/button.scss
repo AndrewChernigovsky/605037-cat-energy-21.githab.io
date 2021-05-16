@@ -64,6 +64,7 @@
       top: 10px;
       left: 651px;
       right: 0;
+      min-width: 115px;
     }
   }
 
@@ -72,5 +73,17 @@
     justify-content: center;
     background-color: $lgt_gray;
     color: $gray;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 5px;
+      max-width: 239px;
+      margin-left: 10px;
+      font-size: 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 158px;
+      margin-left: 5px;
+    }
   }
 }

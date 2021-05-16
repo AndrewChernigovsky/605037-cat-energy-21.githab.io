@@ -43,6 +43,10 @@
     top: 115px;
     right: 0;
     background-color: $spcl_gray2;
+
+    @media (min-width: $tablet-width) {
+      top: 134px;
+    }
   }
 
   &:last-child {
@@ -79,11 +83,13 @@
 
   @media (min-width: $tablet-width) {
     border: 2px solid $spcl_gray2;
-    margin-bottom: 36px;
+    margin-bottom: 69px;
+    height: 550px;
   }
 
   @media (min-width: $desktop-width) {
     border: none;
+    height: 313px;
   }
 }
 
@@ -107,8 +113,9 @@
 
   @media (min-width: $desktop-width) {
     width: 374px;
-    padding-left: 0;
     margin-bottom: 84px;
+    padding-left: 37px;
+    margin-left: -37px;
   }
 }
 
