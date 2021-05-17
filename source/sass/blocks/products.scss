@@ -6,11 +6,13 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  margin-bottom: 53px;
+  margin-bottom: 48px;
+  margin-top: 22px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,6 +26,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $dark_gray;
+  margin-bottom: -8px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -52,6 +55,8 @@
     margin-top: 31px;
     margin-bottom: 21px;
     margin-left: 62px;
+    text-align: center;
+    margin: 0 auto;
   }
 }
 
@@ -62,6 +67,10 @@
   line-height: 16px;
   text-align: center;
   color: $gray;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 21px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -74,18 +83,23 @@
   margin: 0;
   list-style-type: none;
   margin-bottom: 151px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
     padding: 0 30px;
     margin-bottom: 37px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
     margin-bottom: 51px;
+    padding: 0;
   }
 }
 
@@ -95,8 +109,15 @@
   column-gap: 60px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 6px;
+    margin-top: 18px;
     row-gap: 16px;
+    column-gap: 142px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 48px;
+    min-width: 169px;
   }
 
   @media (min-width: $desktop-width) {
@@ -136,7 +157,6 @@
 
   &--name {
     text-align: left;
-
     @media (min-width: $desktop-width) {
       &::after {
         content: "";
@@ -149,9 +169,27 @@
       }
     }
   }
+  
+    @media (min-width: $tablet-width) {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 250px;
+        top: 23px;
+        height: 1px;
+        background-color: $spcl_gray2;
+      }
 
-  &--info {
-    text-align: right;
+      @media (min-width: $desktop-width) {
+        &::before {
+          width: 169px;
+        }
+      }
+    }
+
+    &--info {
+      text-align: right;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -170,6 +208,9 @@
 }
 
 .products__info {
+  min-width: 140px;
+  padding-top: 2px;
+
   @media (min-width: $tablet-width) {
     max-width: 250px;
     padding: 0 7px;
@@ -177,11 +218,16 @@
     text-align: center;
     min-width: 246px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 114px;
+    max-width: 160px;
+  }
 }
 
 .products__info-image {
-  padding-left: 37px;
-  padding-top: 5px;
+  padding-left: 33px;
+  padding-top: 23px;
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
@@ -193,7 +239,7 @@
 
 .products__item {
   position: relative;
-  margin-bottom: 75px;
+  margin-bottom: 74px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
@@ -270,7 +316,7 @@
 
 .products__more {
   position: relative;
-  margin-bottom: -98px;
+  margin-bottom: -102px;
   padding-top: 60px;
 
   &::before {
@@ -317,6 +363,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1220px;
+    padding: 0 50px;
   }
 }
 
@@ -333,6 +380,8 @@
 }
 
 .products__wrapper-card {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     width: 264px;
     background-image: linear-gradient(to bottom, $white 20%, $lgt_gray 21%);
@@ -344,5 +393,39 @@
     width: 245px;
     display: flex;
     justify-content: center;
+  }
+}
+
+.products__product {
+  padding-left: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 48px;
+    padding-top: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 12px;
+    padding-top: 8px;
+  }
+
+  &--closed {
+    @media (max-width: $mobile-width-only) {
+      display: block;
+    }
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--show {
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
   }
 }

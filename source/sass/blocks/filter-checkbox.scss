@@ -32,6 +32,10 @@
     top: 4px;
     width: 29px;
     height: 29px;
+    
+  @media (min-width: $tablet-width) {
+    left: 0;
+    top: 0;
   }
 }
 
