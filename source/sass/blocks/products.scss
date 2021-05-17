@@ -169,23 +169,23 @@
       }
     }
   }
-  
-    @media (min-width: $tablet-width) {
-      &::before {
-        content: "";
-        position: absolute;
-        width: 250px;
-        top: 23px;
-        height: 1px;
-        background-color: $spcl_gray2;
-      }
 
-      @media (min-width: $desktop-width) {
-        &::before {
-          width: 169px;
-        }
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 250px;
+      top: 23px;
+      height: 1px;
+      background-color: $spcl_gray2;
+    }
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        width: 169px;
       }
     }
+  }
 
     &--info {
       text-align: right;
