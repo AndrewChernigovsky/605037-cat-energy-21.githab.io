@@ -1,3 +1,7 @@
+.products__product-even {
+  margin-bottom: 22px;
+}
+
 .products__title {
   font-weight: 400;
   font-size: 36px;
@@ -42,8 +46,16 @@
     max-width: 130px;
     font-size: 20px;
     line-height: 24px;
-    text-align: center;
     margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 31px;
+    margin-bottom: 21px;
+    margin-left: 62px;
+    text-align: center;
   }
 }
 
@@ -106,6 +118,13 @@
     column-gap: 48px;
     min-width: 169px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 60px 60px;
+    column-gap: 46px;
+    padding: 0 45px;
+  }
 }
 
 .products__column {
@@ -117,11 +136,13 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 267px 35%;
+    grid-template-rows: 306px 35%;
+    align-items: center;
+    justify-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-rows: 264px 31%;
+    grid-template-rows: 291px 31%;
   }
 }
 
@@ -136,31 +157,52 @@
   &--name {
     text-align: left;
 
-    @media (min-width: $tablet-width) {
-      &::before {
+    @media (min-width: $desktop-width) {
+      &::after {
         content: "";
         position: absolute;
-        width: 250px;
-        top: 23px;
-        height: 1px;
+        height: 2px;
         background-color: $spcl_gray2;
-      }
-
-      @media (min-width: $desktop-width) {
-        &::before {
-          width: 169px;
-        }
+        width: 167px;
+        top: 21px;
+        left: 0;
       }
     }
+  }
 
-    &--info {
-      text-align: right;
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 250px;
+      top: 23px;
+      height: 1px;
+      background-color: $spcl_gray2;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 169px;
+    }
+  }
+
+  &--info {
+    text-align: right;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
+  }
+}
+
+.products__cell--name:last-child {
+  @media (min-width: $desktop-width) {
+    &::after {
+      content: none;
+      display: none;
+    }
   }
 }
 
@@ -171,7 +213,9 @@
   @media (min-width: $tablet-width) {
     max-width: 250px;
     padding: 0 7px;
-    margin-top: 20px;
+    margin-top: -67px;
+    text-align: center;
+    min-width: 246px;
   }
 
   @media (min-width: $desktop-width) {

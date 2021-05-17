@@ -118,17 +118,20 @@
   }
 }
 
-.social__link:hover .social__icon {
-  &:hover {
-    path {
-      fill: $green;
-    }
-  }
+.social__icon--facebook {
+  stroke: $black;
+}
 
-  &:active {
-    path {
-      fill: $green;
-      opacity: 0.3;
-    }
+.social__link:hover .social__icon {
+  fill: $green;
+
+  &--facebook {
+    fill: none;
+    stroke: $green;
   }
+}
+
+.social__link:active .social__icon {
+  fill: $green;
+  opacity: 0.3;
 }

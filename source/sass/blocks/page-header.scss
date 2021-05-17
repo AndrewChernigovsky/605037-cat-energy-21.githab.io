@@ -5,6 +5,7 @@
   justify-content: space-between;
   position: relative;
   flex-wrap: wrap;
+  border-bottom: 1px solid $lgt_gray;
 
   @media (max-width: $mobile-width-only) {
     border-bottom: 1px solid $lgt_gray;
@@ -14,11 +15,12 @@
     min-height: 60px;
     padding-top: 24px;
     margin-bottom: 57px;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 54px;
-    margin-bottom: 74px;
+    margin-bottom: 69px;
   }
 }
 
@@ -32,12 +34,5 @@
 
   &:active {
     opacity: 0.6;
-  }
-}
-
-.page-header__logo-link img {
-  @media (min-width: $tablet-width) {
-    height: 52px;
-    width: 174px;
   }
 }

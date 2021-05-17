@@ -235,8 +235,8 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding-top: 5px;
-    padding-left: 15px;
+    padding-top: 6px;
+    padding-left: 17px;
   }
 }
 
@@ -299,7 +299,7 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 34px;
+    margin-bottom: 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -346,9 +346,21 @@
   position: relative;
   background-color: $white;
 
+  @media (max-width: $mobile-width-only) {
+    margin-left: -20px;
+    padding-left: 20px;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin-left: -34px;
+    padding-left: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -38px;
+    padding-left: 38px;
   }
 }
 
@@ -479,12 +491,12 @@
 
 .form__title-more {
   @media (max-width: $mobile-width-only) {
-    min-width: 162px;
+    min-width: 181px;
     margin-top: 20px;
   }
 
   @media (min-width: $tablet-width) {
-    min-width: 40%;
+    min-width: 45%;
     margin-bottom: 60px;
     margin-top: 26px;
     margin-left: -40px;
