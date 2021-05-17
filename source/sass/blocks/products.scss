@@ -56,7 +56,6 @@
     margin-bottom: 21px;
     margin-left: 62px;
     text-align: center;
-    margin: 0 auto;
   }
 }
 
@@ -157,6 +156,7 @@
 
   &--name {
     text-align: left;
+  
     @media (min-width: $desktop-width) {
       &::after {
         content: "";
@@ -179,17 +179,16 @@
       height: 1px;
       background-color: $spcl_gray2;
     }
+  }
 
-    @media (min-width: $desktop-width) {
-      &::before {
-        width: 169px;
-      }
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 169px;
     }
   }
 
-    &--info {
-      text-align: right;
-    }
+  &--info {
+    text-align: right;
   }
 
   @media (min-width: $tablet-width) {
