@@ -4,7 +4,7 @@
   margin: 0 auto;
 
   @media (max-width: $mobile-width-only) {
-    top: 287px;
+    top: 286px;
     min-width: 280px;
   }
 
@@ -24,7 +24,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-width: 570px;
+    min-width: 578px;
     position: absolute;
     left: 66px;
   }
@@ -126,10 +126,10 @@
     @media (max-width: $mobile-width-only) {
       position: absolute;
       content: "";
-      height: 8px;
-      width: 37px;
+      height: 6px;
+      width: 35px;
       left: 5px;
-      bottom: 1px;
+      bottom: 2px;
       border-radius: 6px;
       background-color: $green;
       transition: 0.4s;

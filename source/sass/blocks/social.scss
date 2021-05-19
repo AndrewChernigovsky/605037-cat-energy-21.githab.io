@@ -11,7 +11,7 @@
   @media (max-width: $mobile-width-only) {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 33.3% 33.3% 33.3%;
+    // grid-template-rows: 33.3% 33.3% 33.3%;
     text-align: center;
     align-items: center;
     line-height: 0;
@@ -37,7 +37,7 @@
 
 .social__link {
   &--logo {
-    padding-top: 71px;
+    padding-top: 56px;
     padding-bottom: 30px;
     border-bottom: 1px solid $spcl_gray4;
 
@@ -83,14 +83,14 @@
   &-wrapper {
     display: flex;
     justify-content: space-between;
-    max-width: 49%;
+    max-width: 125px;
+    flex-wrap: wrap;
     margin: 0 auto;
     align-items: center;
     padding-bottom: 19px;
-
-    @media (max-width: $mobile-width-only) {
-      max-width: 46%;
-    }
+    padding-right: 8px;
+    padding-top: -2px;
+    margin-top: -1px;
 
     @media (min-width: $tablet-width) {
       padding-top: 8px;
@@ -118,15 +118,19 @@
   }
 }
 
+.social__icon {
+  padding-bottom: 6px;
+}
+
 .social__icon--facebook {
   stroke: $black;
+  fill: none;
 }
 
 .social__link:hover .social__icon {
   fill: $green;
 
   &--facebook {
-    fill: none;
     stroke: $green;
   }
 }
