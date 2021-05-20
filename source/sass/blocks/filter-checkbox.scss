@@ -3,17 +3,19 @@
   display: block;
   cursor: pointer;
   user-select: none;
-  margin-bottom: 20px;
 }
 
 .filter-checkbox {
   @media (max-width: $mobile-width-only) {
-    margin-bottom: 0;
-    padding-left: 44px;
+    margin-bottom: 4px;
+    margin-top: -3px;
+    padding-left: 46px;
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 60px;
+    padding-left: 59px;
+    margin-bottom: 19px;
+    margin-top: -1px;
   }
 }
 

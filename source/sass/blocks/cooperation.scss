@@ -29,6 +29,10 @@
   line-height: 20px;
   text-transform: uppercase;
 
+  @media (max-width: $mobile-width-only) {
+    margin-top: 13px;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 25px;
@@ -41,6 +45,11 @@
   font-size: 14px;
   line-height: 20px;
   color: $gray;
+
+  @media (max-width: $mobile-width-only) {
+    padding-right: 4px;
+    margin-top: 11px;
+  }
 
   @media (min-width: $tablet-width) {
     text-align: right;
