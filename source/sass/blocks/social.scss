@@ -37,7 +37,7 @@
 
 .social__link {
   &--logo {
-    padding-top: 56px;
+    padding-top: 44px;
     padding-bottom: 30px;
     border-bottom: 1px solid $spcl_gray4;
 
@@ -76,9 +76,12 @@
 }
 
 .social__icons {
-  padding-top: 46px;
-  padding-bottom: 2px;
   border-bottom: 1px solid $spcl_gray4;
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 22px;
+    padding-bottom: -2px;
+  }
 
   &-wrapper {
     display: flex;
@@ -87,10 +90,10 @@
     flex-wrap: wrap;
     margin: 0 auto;
     align-items: center;
-    padding-bottom: 19px;
-    padding-right: 8px;
+    padding-bottom: 18px;
+    padding-right: 3px;
     padding-top: -2px;
-    margin-top: -1px;
+    margin-top: 1px;
 
     @media (min-width: $tablet-width) {
       padding-top: 8px;

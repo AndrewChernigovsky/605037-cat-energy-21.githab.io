@@ -22,7 +22,11 @@
 
 .page-header__logo-link {
   cursor: pointer;
-  padding-top: 6px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 10px;
+    margin-bottom: -3px;
+  }
 
   &:hover {
     opacity: 0.8;
