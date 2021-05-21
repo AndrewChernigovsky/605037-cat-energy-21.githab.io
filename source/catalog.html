@@ -8,7 +8,7 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -122,6 +122,13 @@
             <div class="products__wrapper-card container">
               <div class="products__column">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1220px)"
+                  srcset="img/content/product3-tablet@1x.webp 1x, img/content/product3-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/content/product3-tablet@1x.webp 1x, img/content/product3-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                  srcset="img/content/product3@1x.webp 1x, img/content/product3@2x.webp 2x">
+
                   <source media="(min-width: 1220px)"
                     srcset="img/content/product3-tablet@1x.png 1x, img/content/product3-tablet@2x.png 2x">
                   <source media="(min-width: 768px)"
@@ -150,6 +157,13 @@
             <div class="products__wrapper-card container">
               <div class="products__column">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1220px)"
+                  srcset="img/content/product4-tablet@1x.webp 1x, img/content/product4-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/content/product4-tablet@1x.webp 1x, img/content/product4-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                  srcset="img/content/product4@1x.webp 1x, img/content/product4@2x.webp 2x">
+
                   <source media="(min-width: 1220px)"
                     srcset="img/content/product4-tablet@1x.png 1x, img/content/product4-tablet@2x.png 2x">
                   <source media="(min-width: 768px)"
@@ -177,6 +191,13 @@
             <div class="products__wrapper-card container">
               <div class="products__column">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1220px)"
+                  srcset="img/content/product5-tablet@1x.webp 1x, img/content/product5-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/content/product5-tablet@1x.webp 1x, img/content/product5-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                  srcset="img/content/product5@1x.webp 1x, img/content/product5@2x.webp 2x">
+
                   <source media="(min-width: 1220px)"
                     srcset="img/content/product5-tablet@1x.png 1x, img/content/product5-tablet@2x.png 2x">
                   <source media="(min-width: 768px)"
@@ -204,6 +225,13 @@
             <div class="products__wrapper-card container">
               <div class="products__column">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1220px)"
+                  srcset="img/content/product6-tablet@1x.webp 1x, img/content/product6-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/content/product6-tablet@1x.webp 1x, img/content/product6-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                  srcset="img/content/product6@1x.webp 1x, img/content/product6@2x.webp 2x">
+
                   <source media="(min-width: 1220px)"
                     srcset="img/content/product6-tablet@1x.png 1x, img/content/product6-tablet@2x.png 2x">
                   <source media="(min-width: 768px)"
@@ -231,6 +259,13 @@
             <div class="products__wrapper-card container">
               <div class="products__column">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1220px)"
+                  srcset="img/content/product7-tablet@1x.webp 1x, img/content/product7-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/content/product7-tablet@1x.webp 1x, img/content/product7-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                  srcset="img/content/product7@1x.webp 1x, img/content/product7@2x.webp 2x">
+
                   <source media="(min-width: 1220px)"
                     srcset="img/content/product7-tablet@1x.png 1x, img/content/product7-tablet@2x.png 2x">
                   <source media="(min-width: 768px)"
@@ -395,8 +430,7 @@
     </div>
   </footer>
 
-  <script src="js/menu.js"></script>
-  <script src="js/map.js"></script>
+  <script src="js/script.min.js"></script>
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3fw1w75fJqaNw1vjbIQwwCeKjIvuSPf0&callback=initMap&libraries=&v=weekly"
     async></script>

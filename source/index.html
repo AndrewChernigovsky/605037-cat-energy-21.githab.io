@@ -8,18 +8,18 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="img/icons/icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper container">
       <a class="page-header__logo-link">
-      <picture>
-        <source media="(min-width: 1220px)" srcset="img/logo/logo-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
-        <img class="page-header__logo" src="img/logo/logo-mobile.svg" alt="Логотип Кэт Энерджи">
-      </picture>
+        <picture>
+          <source media="(min-width: 1220px)" srcset="img/logo/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+          <img class="page-header__logo" src="img/logo/logo-mobile.svg" alt="Логотип Кэт Энерджи">
+        </picture>
       </a>
 
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -163,6 +163,12 @@
             </div>
             <div class="filter-image filter-image-after">
               <picture>
+                <source type="image/webp" media="(min-width: 1220px)"
+                  srcset="img/content/cat-after@1x.webp 1x, img/content/cat-after@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/content/cat-after@1x.webp 1x, img/content/cat-after@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/cat-after@1x.webp 1x, img/content/cat-after@2x.webp 2x">
+
                 <source media="(min-width: 1220px)"
                   srcset="img/content/cat-after@1x.png 1x, img/content/cat-after@2x.png 2x">
                 <source media="(min-width: 768px)"
@@ -217,14 +223,16 @@
               </svg>
             </a>
             <a class="social__link" href="" aria-label="Логотип Фейсбук">
-              <svg role="img" class="social__icon social__icon--facebook" width="23" height="16" aria-label="logotype-facebook">
+              <svg role="img" class="social__icon social__icon--facebook" width="23" height="16"
+                aria-label="logotype-facebook">
                 <use xlink:href="img/content/social-icons.svg#logo-face"></use>
               </svg>
             </a>
           </div>
         </div>
         <div class="developed">
-          <a class="developed__link developed__link--position" href="https://htmlacademy.ru/intensive/adaptive" aria-label="logotype-developers">
+          <a class="developed__link developed__link--position" href="https://htmlacademy.ru/intensive/adaptive"
+            aria-label="logotype-developers">
             <div>
               HTML Academy
             </div>
@@ -239,8 +247,7 @@
     </div>
   </footer>
 
-  <script src="js/menu.js"></script>
-  <script src="js/map.js"></script>
+  <script src="js/script.min.js"></script>
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3fw1w75fJqaNw1vjbIQwwCeKjIvuSPf0&callback=initMap&libraries=&v=weekly"
     async></script>
