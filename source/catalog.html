@@ -9,6 +9,11 @@
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="js/script.min.js" as="script">
 </head>
 
 <body class="page__body">
@@ -18,7 +23,7 @@
         <picture>
           <source media="(min-width: 1220px)" srcset="img/logo/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
-          <img src="img/logo/logo-mobile.svg" alt="logotype">
+          <img src="img/logo/logo-mobile.svg" loading="lazy" alt="logotype">
         </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav-nojs">
@@ -99,7 +104,7 @@
                   <source media="(min-width: 768px)"
                     srcset="img/content/product2-tablet@1x.png 1x, img/content/product2-tablet@2x.png 2x">
                   <img class="products__product-even product product--even" src="img/content/product2@1x.png"
-                    srcset="img/content/product2@2x.png 2x" alt="product first Cat Energy PRO 500 г">
+                    srcset="img/content/product2@2x.png 2x" loading="lazy" alt="product first Cat Energy PRO 500 г">
                 </picture>
 
                 <div class="products__info">
@@ -134,7 +139,7 @@
                   <source media="(min-width: 768px)"
                     srcset="img/content/product3-tablet@1x.png 1x, img/content/product3-tablet@2x.png 2x">
                   <img class="products__product product" src="img/content/product3@1x.png"
-                    srcset="img/content/product3@2x.png 2x" alt="product first Cat Energy PRO 500 г">
+                    srcset="img/content/product3@2x.png 2x" loading="lazy" alt="product first Cat Energy PRO 500 г">
                 </picture>
 
                 <div class="products__info">
@@ -169,7 +174,7 @@
                   <source media="(min-width: 768px)"
                     srcset="img/content/product4-tablet@1x.png 1x, img/content/product4-tablet@2x.png 2x">
                   <img class="products__product-even product" src="img/content/product4@1x.png"
-                    srcset="img/content/product4@2x.png 2x" alt="product first Cat Energy PRO 500 г">
+                    srcset="img/content/product4@2x.png 2x" loading="lazy" alt="product first Cat Energy PRO 500 г">
                 </picture>
                 <div class="products__info">
                   <h2 class="products__subtitle">Cat Energy PRO 1000 г</h2>
@@ -203,7 +208,7 @@
                   <source media="(min-width: 768px)"
                     srcset="img/content/product5-tablet@1x.png 1x, img/content/product5-tablet@2x.png 2x">
                   <img class="products__product product" src="img/content/product5@1x.png"
-                    srcset="img/content/product5@2x.png 2x" alt="product first Cat Energy PRO 500 г">
+                    srcset="img/content/product5@2x.png 2x" loading="lazy" alt="product first Cat Energy PRO 500 г">
                 </picture>
                 <div class="products__info">
                   <h2 class="products__subtitle">Cat Energy slim 500 г</h2>
@@ -237,7 +242,7 @@
                   <source media="(min-width: 768px)"
                     srcset="img/content/product6-tablet@1x.png 1x, img/content/product6-tablet@2x.png 2x">
                   <img class="products__product-even product" src="img/content/product6@1x.png"
-                    srcset="img/content/product6@2x.png 2x" alt="product first Cat Energy PRO 500 г">
+                    srcset="img/content/product6@2x.png 2x" loading="lazy" alt="product first Cat Energy PRO 500 г">
                 </picture>
                 <div class="products__info">
                   <h2 class="products__subtitle">Cat Energy slim 1000 г</h2>
@@ -271,7 +276,7 @@
                   <source media="(min-width: 768px)"
                     srcset="img/content/product7-tablet@1x.png 1x, img/content/product7-tablet@2x.png 2x">
                   <img class="products__product product" src="img/content/product7@1x.png"
-                    srcset="img/content/product7@2x.png 2x" alt="product first Cat Energy PRO 500 г">
+                    srcset="img/content/product7@2x.png 2x" loading="lazy" alt="product first Cat Energy PRO 500 г">
                 </picture>
                 <div class="products__info">
                   <h2 class="products__subtitle">Cat Energy slim 500 г</h2>
@@ -391,7 +396,7 @@
     <div class="social">
       <div class="social__wrapper container">
         <a class="social__link social__link--logo" href="" aria-label="Логотип Кэт энерджи">
-          <img class="social__logo" src="img/logo/logotype-text.svg" width="101" height="18" alt="logotype">
+          <img class="social__logo" src="img/logo/logotype-text.svg" width="101" height="18" loading="lazy" alt="logotype">
         </a>
         <div class="social__icons">
           <div class="social__icons-wrapper">

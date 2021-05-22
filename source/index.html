@@ -9,6 +9,12 @@
   <link rel="icon" href="img/icons/icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="img/content/catbg-main@1x.jpg" as="image">
+  <link rel="preload" href="js/script.min.js" as="script">
 </head>
 
 <body class="page__body">
@@ -65,7 +71,7 @@
             <source media="(min-width: 768px)"
               srcset="img/content/index-main-product-tablet@1x.png 1x, img/content/index-main-product-tablet@2x.png 2x">
             <img class="offer__product-mobile" src="img/content/index-main-product@1x.png"
-              srcset="img/content/index-main-product@2x.png 2x" alt="Cat Energy Pro 500 граммов">
+              srcset="img/content/index-main-product@2x.png 2x" loading="lazy" alt="Cat Energy Pro 500 граммов">
           </picture>
         </div>
       </div>
@@ -158,7 +164,7 @@
                 <source media="(min-width: 768px)"
                   srcset="img/content/cat-before@1x.png 1x, img/content/cat-before@2x.png 2x">
                 <img class="filter-image__pet-cat-before filter-image--opened" src="img/content/cat-before@1x.png"
-                  srcset="img/content/cat-before@2x.png 2x" alt="Кот, который хочет похудеть">
+                  srcset="img/content/cat-before@2x.png 2x" loading="lazy" alt="Кот, который хочет похудеть">
               </picture>
             </div>
             <div class="filter-image filter-image-after">
@@ -174,7 +180,7 @@
                 <source media="(min-width: 768px)"
                   srcset="img/content/cat-after@1x.png 1x, img/content/cat-after@2x.png 2x">
                 <img class="filter-image__pet-cat-after filter-image--closed" src="img/content/cat-after@1x.png"
-                  srcset="img/content/cat-after@2x.png 2x" alt="Кот, который хочет похудеть">
+                  srcset="img/content/cat-after@2x.png 2x" loading="lazy" alt="Кот, который хочет похудеть">
               </picture>
             </div>
             <div class="filter-before-after">
@@ -208,7 +214,7 @@
     <div class="social">
       <div class="social__wrapper container">
         <a class="social__link social__link--logo" href="" aria-label="Логотип Кэт энерджи">
-          <img class="social__logo" src="img/logo/logotype-text.svg" width="101" height="18" alt="logotype">
+          <img class="social__logo" src="img/logo/logotype-text.svg" width="101" height="18" loading="lazy" alt="logotype">
         </a>
         <div class="social__icons">
           <div class="social__icons-wrapper">

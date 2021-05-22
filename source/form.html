@@ -9,6 +9,11 @@
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="js/script.min.js" as="script">
 </head>
 
 <body class="page__body">
@@ -18,7 +23,7 @@
         <picture>
           <source media="(min-width: 1220px)" srcset="img/logo/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
-          <img src="img/logo/logo-mobile.svg" alt="logotype">
+          <img src="img/logo/logo-mobile.svg" loading="lazy" alt="logotype">
         </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -173,7 +178,7 @@
     <div class="social">
       <div class="social__wrapper container">
         <a class="social__link social__link--logo" href="" aria-label="Логотип Кэт энерджи">
-          <img class="social__logo" src="img/logo/logotype-text.svg" width="101" height="18" alt="logotype">
+          <img class="social__logo" src="img/logo/logotype-text.svg" width="101" height="18" loading="lazy" alt="logotype">
         </a>
         <div class="social__icons">
           <div class="social__icons-wrapper">
