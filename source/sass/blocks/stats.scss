@@ -57,7 +57,7 @@
 .stats__wrappers {
   text-align: center;
   position: relative;
-  border: 1px solid $gray;
+  border: 1px solid $spcl_gray2;
 
   @media (min-width: $tablet-width) {
     min-width: 160px;
@@ -216,6 +216,7 @@
 
     @media (min-width: $tablet-width) {
       top: 61px;
+      min-width: 137px;
     }
   }
 
@@ -229,6 +230,7 @@
 
     @media (min-width: $tablet-width) {
       top: 61px;
+      min-width: 137px;
     }
   }
 }

@@ -16,6 +16,16 @@
   }
 }
 
+.form-pets__text {
+  @media (min-width: $tablet-width) {
+    padding-left: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 50px;
+  }
+}
+
 .form-pets__subtitle {
   font-weight: 400;
   font-size: 14px;

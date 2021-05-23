@@ -3,7 +3,9 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+}
 
+.filter-image__pet {
   &--closed {
     display: none;
 
@@ -54,12 +56,12 @@
     max-width: 100%;
     position: absolute;
     padding-top: 48px;
-    left: -237px;
+    left: -324px;
   }
 
   @media (min-width: $desktop-width) {
     top: -22px;
-    left: -226px;
+    left: -291px;
   }
 }
 
@@ -87,6 +89,7 @@
     height: 527px;
     right: 191px;
     top: -325px;
+    z-index: 2;
   }
 }
 
@@ -94,7 +97,7 @@
   @media (max-width: $mobile-width-only) {
     position: relative;
     height: 274px;
-    width: 320px;
+    width: 318px;
     overflow: hidden;
     top: -317px;
     left: -19px;
@@ -103,7 +106,7 @@
   @media (min-width: $tablet-width) {
     position: relative;
     height: 569px;
-    width: 46%;
+    width: 500px;
     overflow: hidden;
     top: -671px;
     left: 356px;
@@ -111,6 +114,8 @@
 
   @media (min-width: $desktop-width) {
     top: -865px;
-    left: 406px;
+    left: 408px;
+    width: 400px;
+    z-index: 1;
   }
 }

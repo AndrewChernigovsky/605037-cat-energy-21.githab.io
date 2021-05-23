@@ -206,16 +206,6 @@
   }
 }
 
-.form__text {
-  @media (min-width: $tablet-width) {
-    padding-left: 69px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 50px;
-  }
-}
-
 .form__textarea {
   @media (max-width: $mobile-width-only) {
     min-width: 273px;
