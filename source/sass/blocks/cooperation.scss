@@ -107,3 +107,11 @@
     background-color: $white;
   }
 }
+
+.cooperation__adress-other {
+  @media (max-width: $mobile-width-only) {
+    padding: 16px 0 12px;
+    margin: -25px auto 0;
+  }
+}
+
