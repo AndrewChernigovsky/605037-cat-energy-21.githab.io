@@ -9,16 +9,21 @@
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="js/script.min.js" as="script">
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper container">
-      <a class="page-header__logo-link">
+      <a class="page-header__logo-link" href="index.html">
         <picture>
           <source media="(min-width: 1220px)" srcset="img/logo/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
-          <img src="img/logo/logo-mobile.svg" alt="logotype">
+          <img src="img/logo/logo-mobile.svg" loading="lazy" alt="logotype">
         </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -120,13 +125,13 @@
             <div class="form__comment-wrapper container">
               <h2 class="form__title form__title-comment">Комментарий</h2>
               <textarea class="form__textarea" name="comment" id="comment-field"
-                placeholder="Расскажите обо всех повадках кота" rows="6" wrap="hard"></textarea>
+                placeholder="Расскажите обо всех повадках кота" rows="6" cols="10" wrap="hard"></textarea>
             </div>
           </fieldset>
 
           <fieldset class="form__fieldset form__filter">
             <div class="form__filter-wrapper container">
-              <legend class="form__title form__title-more">Дополнительно</legend>
+              <h2 class="form__title form__title-more">Дополнительно</h2>
               <ul class="form__list-checkbox">
                 <li class="form__item filter-option filter-checkbox">
                   <input class="visually-hidden filter-checkbox__input filter-input" type="checkbox" name="sugar"
@@ -172,8 +177,8 @@
     </section>
     <div class="social">
       <div class="social__wrapper container">
-        <a class="social__link social__link--logo" href="" aria-label="Логотип Кэт энерджи">
-          <img class="social__logo" src="img/logo/logotype-text.svg" width="101" height="18" alt="logotype">
+        <a class="social__link social__link--logo" href="index.html" aria-label="Логотип Кэт энерджи">
+          <img class="social__logo" src="img/logo/logotype-text.svg" width="101" height="18" loading="lazy" alt="logotype">
         </a>
         <div class="social__icons">
           <div class="social__icons-wrapper">
