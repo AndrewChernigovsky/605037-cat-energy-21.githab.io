@@ -524,12 +524,12 @@
 
 .form__title-more {
   @media (max-width: $mobile-width-only) {
-    min-width: 181px;
+    width: 164px;
     margin-top: 20px;
   }
 
   @media (min-width: $tablet-width) {
-    min-width: 45%;
+    width: 40%;
     margin-bottom: 60px;
     margin-top: 26px;
     margin-left: -38px;
@@ -537,6 +537,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 24%;
+    width: 21%;
   }
 }
