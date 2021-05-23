@@ -83,12 +83,7 @@
   line-height: 20px;
   color: $white;
 
-  @media (max-width: $mobile-width-only) {
-    padding-top: 32px;
-  }
-
   @media (min-width: $tablet-width) {
-    padding-right: 46px;
     text-align: left;
   }
 

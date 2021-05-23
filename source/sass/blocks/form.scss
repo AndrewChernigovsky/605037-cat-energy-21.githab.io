@@ -23,8 +23,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 574px;
-    min-width: 574px;
+    min-width: 568px;
   }
 
   &--email {
@@ -263,6 +262,10 @@
   @media (min-width: $tablet-width) {
     line-height: 23px;
   }
+
+  @media (min-width: $desktop-width) {
+    line-height: 25px;
+  }
 }
 
 .form__info {
@@ -299,6 +302,21 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   line-height: 13px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $green;
+    height: 1px;
+    top: 37px;
+    min-width: 100%;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      top: 54px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     line-height: 22px;
@@ -321,7 +339,7 @@
 
   &::placeholder {
     @media (min-width: $tablet-width) {
-      padding-left: 25px;
+      padding-left: 17px;
     }
 
     @media (min-width: $desktop-width) {
@@ -350,7 +368,6 @@
   fill: $green;
 }
 
-
 .form_info-email-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -378,6 +395,25 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   margin-bottom: 48px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $green;
+    top: 37px;
+    height: 1px;
+    min-width: 100%;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      top: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 45px;
+    }
+  }
 
   @media (max-width: $mobile-width-only) {
     margin-bottom: -1px;
@@ -394,6 +430,25 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   line-height: 42px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $green;
+    height: 1px;
+    top: 37px;
+    min-width: 100%;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      top: 47px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 58px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 52px;
@@ -480,6 +535,8 @@
 
 .form__title-contact {
   max-width: 72%;
+  padding-left: 18px;
+  margin-left: -19px;
 
   @media (min-width: $tablet-width) {
     min-width: 554px;
@@ -490,6 +547,8 @@
 
   @media (min-width: $desktop-width) {
     min-width: 45%;
+    margin-bottom: 75px;
+    margin-top: 24px;
   }
 }
 
@@ -508,6 +567,8 @@
 
   @media (min-width: $desktop-width) {
     max-width: 18%;
+    margin-top: 25px;
+    margin-left: -39px;
   }
 }
 
@@ -527,5 +588,7 @@
 
   @media (min-width: $desktop-width) {
     width: 21%;
+    margin-bottom: 59px;
+    margin-top: 33px;
   }
 }
