@@ -29,6 +29,8 @@
 
     @media (max-width: $mobile-width-only) {
       min-width: 280px;
+      margin-top: 19px;
+      padding-bottom: 20px;
     }
 
     @media (min-width: $tablet-width) {
@@ -44,16 +46,18 @@
 }
 
 .developed__link:hover .developed__logo {
-  stroke: $green;
+  fill: $green;
 }
 
 .developed__logo {
+  fill: $mdl_gray;
+
   &:hover {
-    stroke: $green;
+    fill: $green;
   }
 
   &:active {
-    stroke: $green;
+    fill: $green;
     opacity: 0.3;
   }
 }

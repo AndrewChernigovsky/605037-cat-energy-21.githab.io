@@ -1,6 +1,6 @@
 .example {
   @media (max-width: $mobile-width-only) {
-    background-color: $lgt_gray;
+    background-image: linear-gradient(to bottom, $white 5%, $lgt_gray 5%);
   }
 
   @media (min-width: $tablet-width) {
@@ -13,11 +13,15 @@
     min-width: 100%;
     min-height: 598px;
     margin-bottom: 135px;
-    background-image: linear-gradient(to bottom, $white  30%, #f2f2f2 30%);
+    background-image: linear-gradient(to bottom, $white 23%, $lgt_gray 23%);
   }
 }
 
 .example__wrapper {
+  @media (max-width: $mobile-width-only) {
+    padding-top: 33px;
+  }
+
   @media (min-width: $desktop-width) {
     position: relative;
   }
@@ -29,7 +33,8 @@
 
   @media (max-width: $mobile-width-only) {
     font-size: 36px;
-    line-height: 40px;
+    line-height: 42px;
+    margin-bottom: 33px;
   }
 
   @media (min-width: $tablet-width) {
@@ -63,6 +68,6 @@
 
   @media (min-width: $desktop-width) {
     max-width: 435px;
-    margin-bottom: 17px;
+    margin-bottom: 66px;
   }
 }

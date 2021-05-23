@@ -11,14 +11,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: -371px;
-    right: -96px;
+    top: -370px;
+    left: 62.5%;
+    max-width: 425px;
   }
 }
 
 .filter-pets__wrapper {
   @media (max-width: $mobile-width-only) {
-    max-height: 350px;
+    max-height: 345px;
     max-width: 280px;
     margin: 0 auto;
   }

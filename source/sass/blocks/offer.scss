@@ -1,4 +1,20 @@
 .offer {
+  @media (max-width: $mobile-width-only) {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: $green_opacity;
+      background-repeat: no-repeat;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 302px;
+      z-index: 0;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     &::before {
       position: absolute;
@@ -9,7 +25,7 @@
       width: 50%;
       height: 697px;
       background-color: $green-spc;
-      background-image: url("../../img/content/index-background-desktop1x.jpg");
+      background-image: url("../../img/content/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
       background-size: auto 697px;
       background-position-x: right;
@@ -19,27 +35,17 @@
 
 .offer__wrapper {
   @media (max-width: $mobile-width-only) {
-    height: 298px;
+    height: 302px;
     margin: 0 auto;
-    background-image: url("../img/content/catbg-main.jpg");
+    background-image: url("../../img/content/catbg-main@1x.jpg");
     background-repeat: no-repeat;
     background-position: calc((100% - 40px) / 2) 0;
+    background-size: 563px auto;
     z-index: 0;
-    margin-bottom: 199px;
+    margin-bottom: 200px;
+    margin-top: -4px;
     display: flex;
     justify-content: stretch;
-
-    &::after {
-      position: absolute;
-      content: "";
-      background-color: $green_opacity;
-      background-repeat: no-repeat;
-      top: 64px;
-      left: 0;
-      width: 100%;
-      height: 302px;
-      z-index: 0;
-    }
   }
 
   @media (min-width: $tablet-width) {
@@ -48,28 +54,59 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
-    padding-left: 80px;
-    padding-top: 52px;
+    padding-left: 190px;
     margin-bottom: 266px;
   }
 }
 
+@media (min-resolution: 2dppx) {
+  .offer {
+    @media (min-width: $desktop-width) {
+      &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        z-index: -1;
+        width: 50%;
+        height: 697px;
+        background-color: $green-spc;
+        background-image: url("../../img/content/index-background-desktop@2x.jpg");
+        background-repeat: no-repeat;
+        background-size: auto 697px;
+        background-position-x: right;
+      }
+    }
+
+    .offer__wrapper {
+      background-image: url("../../img/content/catbg-main@2x.jpg");
+    }
+
+    @media (min-width: $tablet-width) {
+      .offer__wrapper {
+        background-image: none;
+      }
+    }
+  }
+}
+
 .offer__wrappers {
+  position: relative;
+
   @media (max-width: $mobile-width-only) {
     order: 1;
     max-width: 280px;
     z-index: 3;
-    top: -4px;
+    top: 0;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: relative;
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 82px;
+    padding-left: 112px;
     margin-bottom: 525px;
   }
 
@@ -86,7 +123,7 @@
     line-height: 36px;
     text-align: center;
     padding: 3px 0;
-    padding-top: 183px;
+    margin-top: 203px;
     margin-bottom: 8px;
     font-weight: 400;
   }
@@ -97,7 +134,7 @@
     font-weight: 400;
     color: $black;
     max-width: 440px;
-    margin-top: 59px;
+    margin-top: 57px;
     padding-left: 5px;
   }
 
@@ -174,58 +211,27 @@
 }
 
 .offer__product-mobile {
+  display: block;
+  position: absolute;
+
   @media (max-width: $mobile-width-only) {
-    display: block;
-    position: absolute;
-    top: 168px;
-    left: 1px;
-    width: 279px;
-    height: 269px;
+    top: 171px;
+    left: 20px;
+    width: 280px;
+    height: 270px;
   }
 
   @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.offer__product-tablet {
-  @media (max-width: $mobile-width-only) {
-    display: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    position: absolute;
     top: 198px;
-    left: 1px;
+    left: 30px;
     width: 707px;
     height: 610px;
     z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.offer__product-desktop {
-  @media (max-width: $mobile-width-only) {
-    display: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: block;
-    position: absolute;
-    top: 25px;
-    left: 448px;
+    top: -82px;
+    left: 368px;
     width: 552px;
     height: 499px;
   }

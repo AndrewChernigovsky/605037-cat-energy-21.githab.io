@@ -2,6 +2,22 @@
   position: relative;
   padding-left: 22px;
   padding-bottom: 20px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-bottom: 37px;
+    margin-top: -16px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 20px;
+    padding-top: 8px;
+    margin-bottom: 9px;
+  }
 }
 
 .filter-radio__input + .filter-radio__label::before {
@@ -9,10 +25,17 @@
   position: absolute;
   left: 0;
   top: -8px;
-  width: 30px;
-  height: 30px;
-  border: 2px solid $spcl_gray2;
+  width: 37px;
+  height: 37px;
+  border: 1px solid $spcl_gray2;
   border-radius: 50%;
+
+  @media (max-width: $mobile-width-only) {
+    left: 0;
+    top: -5px;
+    width: 28px;
+    height: 28px;
+  }
 
   @media (min-width: $tablet-width) {
     left: 29px;
@@ -20,9 +43,84 @@
     width: 37px;
     height: 37px;
   }
+
+  @media (min-width: $desktop-width) {
+    left: 28px;
+    top: 10px;
+  }
+}
+
+.filter-radio__input:focus + label::after,
+.filter-radio__input:focus + label::before,
+.filter-radio__input:hover + label::after,
+.filter-radio__input:hover + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 37px;
+  height: 37px;
+  border: 1px solid $spcl_gray5;
+  border-radius: 50%;
+
+  @media (max-width: $mobile-width-only) {
+    left: 0;
+    top: -5px;
+    width: 28px;
+    height: 28px;
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 29px;
+    top: -4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 28px;
+    top: 10px;
+  }
 }
 
 .filter-radio__input:checked + .filter-radio__label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 14px;
+  height: 14px;
+  background-color: $green;
+  border-radius: 50%;
+
+  @media (max-width: $mobile-width-only) {
+    left: 8px;
+    top: 3px;
+    width: 14px;
+    height: 14px;
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 39px;
+    top: 6px;
+    width: 18px;
+    height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 38px;
+    top: 20px;
+  }
+}
+
+.filter-radio__input:disabled + label::after,
+.filter-radio__input:disabled + label::before {
+  opacity: 0.4;
+}
+
+.filter-radio__input:disabled + label {
+  opacity: 0.4;
+}
+
+.filter-radio__input:disabled + label::before {
   content: "";
   position: absolute;
   left: 9px;
@@ -33,7 +131,7 @@
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
-    left: 41px;
+    left: 40px;
     top: 6px;
     width: 18px;
     height: 18px;
@@ -45,7 +143,7 @@
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  padding-left: 25px;
+  padding-left: 23px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
