@@ -75,7 +75,7 @@
   }
 }
 
-.filter-image-before {
+.filter-image__before {
   position: relative;
 
   @media (max-width: $mobile-width-only) {
@@ -103,7 +103,7 @@
   }
 }
 
-.filter-image-after {
+.filter-image__after {
   @media (max-width: $mobile-width-only) {
     position: relative;
     height: 274px;
