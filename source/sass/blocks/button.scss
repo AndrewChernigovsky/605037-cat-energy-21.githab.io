@@ -21,7 +21,7 @@
       font-size: 20px;
       line-height: 0;
       margin-bottom: 40px;
-      margin-top: -3px;
+      margin-top: -5px;
     }
 
     @media (min-width: $desktop-width) {
@@ -100,6 +100,40 @@
     @media (min-width: $desktop-width) {
       min-width: 158px;
       margin-left: 5px;
+    }
+  }
+
+  &--all {
+    color: $black;
+    min-height: 40px;
+    background-color: $lgt_gray;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 9px 94px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 27px;
+      width: 195px;
+      margin-left: 10px;
+      margin-top: -21px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 27px;
+      width: 116px;
+      margin-left: 2px;
+      margin-top: -12px;
+    }
+
+    &:hover {
+      background-color: $spcl_gray;
+    }
+
+    &:active {
+      opacity: 0.4;
     }
   }
 }
